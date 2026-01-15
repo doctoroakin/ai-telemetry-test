@@ -1,0 +1,1545 @@
+Last login: Sat Nov 22 10:26:09 on ttys007
+jv@macmini ~ % cd Desktop
+mkdir ai-telemetry-test
+cd ai-telemetry-test
+jv@macmini ai-telemetry-test % python3 -m venv venv
+jv@macmini ai-telemetry-test % source venv/bin/activate
+
+(venv) jv@macmini ai-telemetry-test % pip install transformers torch accelerate
+Collecting transformers
+  Downloading transformers-4.57.1-py3-none-any.whl (12.0 MB)
+     |████████████████████████████████| 12.0 MB 2.1 MB/s 
+Collecting torch
+  Downloading torch-2.2.2-cp39-none-macosx_10_9_x86_64.whl (150.8 MB)
+     |████████████████████████████████| 150.8 MB 2.2 MB/s 
+Collecting accelerate
+  Downloading accelerate-1.10.1-py3-none-any.whl (374 kB)
+     |████████████████████████████████| 374 kB 3.8 MB/s 
+Collecting regex!=2019.12.17
+  Downloading regex-2025.11.3-cp39-cp39-macosx_10_9_x86_64.whl (290 kB)
+     |████████████████████████████████| 290 kB 1.6 MB/s 
+Collecting requests
+  Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+     |████████████████████████████████| 64 kB 2.3 MB/s 
+Collecting safetensors>=0.4.3
+  Downloading safetensors-0.7.0-cp38-abi3-macosx_10_12_x86_64.whl (467 kB)
+     |████████████████████████████████| 467 kB 2.3 MB/s 
+Collecting numpy>=1.17
+  Using cached numpy-2.0.2-cp39-cp39-macosx_14_0_x86_64.whl (6.9 MB)
+Collecting tqdm>=4.27
+  Downloading tqdm-4.67.1-py3-none-any.whl (78 kB)
+     |████████████████████████████████| 78 kB 10.4 MB/s 
+Collecting filelock
+  Downloading filelock-3.19.1-py3-none-any.whl (15 kB)
+Collecting tokenizers<=0.23.0,>=0.22.0
+  Downloading tokenizers-0.22.1-cp39-abi3-macosx_10_12_x86_64.whl (3.1 MB)
+     |████████████████████████████████| 3.1 MB 2.1 MB/s 
+Collecting pyyaml>=5.1
+  Downloading pyyaml-6.0.3-cp39-cp39-macosx_10_13_x86_64.whl (184 kB)
+     |████████████████████████████████| 184 kB 2.0 MB/s 
+Collecting packaging>=20.0
+  Downloading packaging-25.0-py3-none-any.whl (66 kB)
+     |████████████████████████████████| 66 kB 2.3 MB/s 
+Collecting huggingface-hub<1.0,>=0.34.0
+  Downloading huggingface_hub-0.36.0-py3-none-any.whl (566 kB)
+     |████████████████████████████████| 566 kB 2.3 MB/s 
+Collecting sympy
+  Downloading sympy-1.14.0-py3-none-any.whl (6.3 MB)
+     |████████████████████████████████| 6.3 MB 1.8 MB/s 
+Collecting jinja2
+  Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+Collecting networkx
+  Downloading networkx-3.2.1-py3-none-any.whl (1.6 MB)
+     |████████████████████████████████| 1.6 MB 3.0 MB/s 
+Collecting fsspec
+  Downloading fsspec-2025.10.0-py3-none-any.whl (200 kB)
+     |████████████████████████████████| 200 kB 2.1 MB/s 
+Collecting typing-extensions>=4.8.0
+  Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+     |████████████████████████████████| 44 kB 2.0 MB/s 
+Collecting psutil
+  Downloading psutil-7.1.3-cp36-abi3-macosx_10_9_x86_64.whl (238 kB)
+     |████████████████████████████████| 238 kB 3.1 MB/s 
+Collecting hf-xet<2.0.0,>=1.1.3
+  Downloading hf_xet-1.2.0-cp37-abi3-macosx_10_12_x86_64.whl (2.9 MB)
+     |████████████████████████████████| 2.9 MB 2.4 MB/s 
+Collecting MarkupSafe>=2.0
+  Downloading markupsafe-3.0.3-cp39-cp39-macosx_10_9_x86_64.whl (11 kB)
+Collecting charset_normalizer<4,>=2
+  Downloading charset_normalizer-3.4.4-cp39-cp39-macosx_10_9_universal2.whl (209 kB)
+     |████████████████████████████████| 209 kB 13.5 MB/s 
+Collecting certifi>=2017.4.17
+  Downloading certifi-2025.11.12-py3-none-any.whl (159 kB)
+     |████████████████████████████████| 159 kB 3.5 MB/s 
+Collecting idna<4,>=2.5
+  Downloading idna-3.11-py3-none-any.whl (71 kB)
+     |████████████████████████████████| 71 kB 3.4 MB/s 
+Collecting urllib3<3,>=1.21.1
+  Downloading urllib3-2.5.0-py3-none-any.whl (129 kB)
+     |████████████████████████████████| 129 kB 2.7 MB/s 
+Collecting mpmath<1.4,>=1.1.0
+  Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+     |████████████████████████████████| 536 kB 2.0 MB/s 
+Installing collected packages: urllib3, idna, charset-normalizer, certifi, typing-extensions, tqdm, requests, pyyaml, packaging, mpmath, MarkupSafe, hf-xet, fsspec, filelock, sympy, networkx, jinja2, huggingface-hub, torch, tokenizers, safetensors, regex, psutil, numpy, transformers, accelerate
+Successfully installed MarkupSafe-3.0.3 accelerate-1.10.1 certifi-2025.11.12 charset-normalizer-3.4.4 filelock-3.19.1 fsspec-2025.10.0 hf-xet-1.2.0 huggingface-hub-0.36.0 idna-3.11 jinja2-3.1.6 mpmath-1.3.0 networkx-3.2.1 numpy-2.0.2 packaging-25.0 psutil-7.1.3 pyyaml-6.0.3 regex-2025.11.3 requests-2.32.5 safetensors-0.7.0 sympy-1.14.0 tokenizers-0.22.1 torch-2.2.2 tqdm-4.67.1 transformers-4.57.1 typing-extensions-4.15.0 urllib3-2.5.0
+WARNING: You are using pip version 21.2.4; however, version 25.3 is available.
+You should consider upgrading via the '/Users/jv/Desktop/ai-telemetry-test/venv/bin/python3 -m pip install --upgrade pip' command.
+(venv) jv@macmini ai-telemetry-test % nano telemetry_test.py
+(venv) jv@macmini ai-telemetry-test % python telemetry_test.py
+
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.0.2 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/Users/jv/Desktop/ai-telemetry-test/telemetry_test.py", line 10, in <module>
+    import torch
+  File "/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/__init__.py", line 1477, in <module>
+    from .functional import *  # noqa: F403
+  File "/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/functional.py", line 9, in <module>
+    import torch.nn.functional as F
+  File "/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/nn/__init__.py", line 1, in <module>
+    from .modules import *  # noqa: F403
+  File "/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/nn/modules/__init__.py", line 35, in <module>
+    from .transformer import TransformerEncoder, TransformerDecoder, \
+  File "/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/nn/modules/transformer.py", line 20, in <module>
+    device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
+/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/nn/modules/transformer.py:20: UserWarning: Failed to initialize NumPy: _ARRAY_API not found (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:84.)
+  device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
+/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Loading model... this will take a minute...
+tokenizer_config.json: 7.34kB [00:00, 13.8MB/s]
+vocab.json: 798kB [00:00, 5.55MB/s]
+merges.txt: 456kB [00:00, 5.00MB/s]
+tokenizer.json: 2.11MB [00:00, 20.0MB/s]
+added_tokens.json: 1.08kB [00:00, 4.50MB/s]
+special_tokens_map.json: 100%|█████████████████████████| 99.0/99.0 [00:00<00:00, 20.4kB/s]
+config.json: 100%|████████████████████████████████████████| 735/735 [00:00<00:00, 965kB/s]
+`torch_dtype` is deprecated! Use `dtype` instead!
+model.safetensors.index.json: 35.7kB [00:00, 95.5MB/s]
+Fetching 2 files:   0%|                                             | 0/2 [00:00<?, ?it/s^[[B^[[B^[[B-of-00002.safetensors:   0%|             | 12.7M/5.00G [00:20<1:38:32, 843kB/s]
+model-00001-of-00002.safetensors:   3%|▍              | 146M/5.00G [01:00<07:54, 10.2MB/s]
+model-00001-of-00002.safetensors:   4%|▌              | 199M/5.00G [01:21<36:28, 2.19MB/model-00001-of-00002.safetensors:   4%|▋              | 214M/5.00G [01:22<24:39, 3.23MB/model-00001-of-00002.safetensors:   5%|▋              | 226M/5.00G [01:22<18:11, 4.37MB/model-00001-of-00002.safetensors:   5%|▋              | 238M/5.00G [01:29<25:05, 3.16MB/model-00001-of-00002.safetensors:   5%|▊              | 255M/5.00G [01:39<34:35, 2.28MB/model-00001-of-00002.safetensors:   5%|▊              | 268M/5.00G [01:40<26:19, 2.99MB/model-00001-of-00002.safetensors:   5%|▊              | 274M/5.00G [01:41<23:12, 3.39MB/model-00001-of-00002.safetensors:   6%|▊              | 285M/5.00G [01:44<22:19, 3.52MB/model-00001-of-00002.safetensors:   6%|▉              | 293M/5.00G [01:44<18:10, 4.31MB/model-00001-of-00002.safetensors:   6%|▉              | 303M/5.00G [01:47<18:35, 4.21MB/model-00001-of-00002.safetensors:   6%|▉              | 321M/5.00G [01:48<12:46, 6.10MB/model-00001-of-00002.safetensors:   7%|▉              | 332M/5.00G [01:51<14:09, 5.49MB/model-00001-of-00002.safetensors:   7%|█              | 345M/5.00G [01:51<10:16, 7.55MB/model-00001-of-00002.safetensors:   7%|█              | 348M/5.00G [01:57<23:58, 3.23MB/model-00001-of-00002.safetensors:   7%|█              | 355M/5.00G [01:59<23:10, 3.34MB/model-00001-of-00002.safetensors:   7%|█              | 368M/5.00G [02:01<19:53, 3.88MB/model-00001-of-00002.safetensors:   8%|█▏             | 381M/5.00G [02:04<18:09, 4.23MB/model-00001-of-00002.safetensors:   8%|█▏             | 388M/5.00G [02:06<19:43, 3.89MB/model-00001-of-00002.safetensors:   8%|█▏             | 406M/5.00G [02:16<28:44, 2.66MB/model-00001-of-00002.safetensors:   8%|█▏             | 409M/5.00G [02:25<48:25, 1.58MB/model-00001-of-00002.safetensors:   8%|█▎             | 422M/5.00G [02:27<34:07, 2.23MB/model-00001-of-00002.safetensors:   9%|█▎             | 449M/5.00G [02:29<19:18, 3.92MB/model-00001-of-00002.safetensors:   9%|█▎             | 455M/5.00G [02:32<22:49, 3.32MB/model-00001-of-00002.safetensors:   9%|█▎             | 455M/5.00G [02:44<22:49, 3.32MB/model-00001-of-00002.safetensors:   9%|█▍             | 467M/5.00G [02:48<43:59, 1.72MB/model-00001-of-00002.safetensors:  10%|█▍             | 480M/5.00G [02:49<33:21, 2.26MB/model-00001-of-00002.safetensors:  10%|█▍             | 498M/5.00G [02:54<27:09, 2.76MB/model-00001-of-00002.safetensors:  10%|█▌             | 506M/5.00G [02:56<27:30, 2.72MB/model-00001-of-00002.safetensors:  10%|█▌             | 516M/5.00G [03:04<33:46, 2.21MB/model-00001-of-00002.safetensors:  11%|█▌             | 529M/5.00G [03:04<23:54, 3.11MB/model-00001-of-00002.safetensors:  11%|█▋             | 551M/5.00G [03:06<15:38, 4.73MB/model-00001-of-00002.safetensors:  12%|█▋             | 576M/5.00G [03:14<19:20, 3.81MB/model-00001-of-00002.safetensors:  12%|█▊             | 589M/5.00G [03:19<20:51, 3.52MB/model-00001-of-00002.safetensors:  13%|█▉             | 625M/5.00G [03:20<11:56, 6.10MB/model-00001-of-00002.safetensors:  13%|█▉             | 636M/5.00G [03:21<11:37, 6.25MB/model-00001-of-00002.safetensors:  13%|█▉             | 643M/5.00G [03:29<21:23, 3.39MB/model-00001-of-00002.safetensors:  13%|█▉             | 656M/5.00G [03:37<27:21, 2.64MB/model-00001-of-00002.safetensors:  14%|██             | 687M/5.00G [03:40<16:44, 4.29MB/model-00001-of-00002.safetensors:  14%|██             | 700M/5.00G [03:43<17:28, 4.10MB/model-00001-of-00002.safetensors:  15%|██▎            | 755M/5.00G [03:49<11:51, 5.96MB/s]
+model-00001-of-00002.safetensors:  15%|██▎            | 764M/5.00G [03:53<13:53, 5.08MB/model-00001-of-00002.safetensors:  16%|██▎            | 777M/5.00G [03:57<15:13, 4.62MB/model-00001-of-00002.safetensors:  16%|██▎            | 790M/5.00G [04:00<15:25, 4.54MB/model-00001-of-00002.safetensors:  16%|██▍            | 822M/5.00G [04:01<09:43, 7.15MB/model-00001-of-00002.safetensors:  17%|██▌            | 848M/5.00G [04:02<07:04, 9.77MB/model-00001-of-00002.safetensors:  17%|██▌            | 850M/5.00G [04:02<07:01, 9.84MB/s]
+model-00001-of-00002.safetensors:  18%|██▋            | 876M/5.00G [04:04<06:32, 10.5MB/model-00001-of-00002.safetensors:  18%|██▊            | 917M/5.00G [04:05<04:13, 16.1MB/model-00001-of-00002.safetensors:  19%|██▊            | 930M/5.00G [04:09<06:30, 10.4MB/model-00001-of-00002.safetensors:  19%|██▉            | 958M/5.00G [04:11<05:48, 11.6MB/model-00001-of-00002.safetensors:  20%|██▉            | 998M/5.00G [04:11<03:36, 18.4MB/model-00001-of-00002.safetensors:  20%|██▊           | 1.01G/5.00G [04:15<06:35, 10.1MB/model-00001-of-00002.safetensors:  20%|██▊           | 1.01G/5.00G [04:17<08:10, 8.13MB/model-00001-of-00002.safetensors:  21%|██▊           | 1.03G/5.00G [04:29<21:43, 3.05MB/model-00001-of-00002.safetensors:  21%|██▉           | 1.03G/5.00G [04:30<20:09, 3.28MB/model-00001-of-00002.safetensors:  22%|███           | 1.08G/5.00G [04:31<07:37, 8.55MB/model-00001-of-00002.safetensors:  22%|███           | 1.11G/5.00G [04:34<07:28, 8.66MB/model-00001-of-00002.safetensors:  23%|███▎          | 1.16G/5.00G [04:41<07:54, 8.07MB/model-00001-of-00002.safetensors:  24%|███▎          | 1.20G/5.00G [04:48<09:25, 6.71MB/model-00001-of-00002.safetensors:  24%|███▍          | 1.21G/5.00G [04:51<10:11, 6.19MB/model-00001-of-00002.safetensors:  24%|███▍          | 1.22G/5.00G [04:51<09:21, 6.73MB/model-00001-of-00002.safetensors:  25%|███▍          | 1.23G/5.00G [04:55<11:19, 5.54MB/model-00001-of-00002.safetensors:  25%|███▍          | 1.24G/5.00G [05:02<17:00, 3.68MB/model-00001-of-00002.safetensors:  25%|███▌          | 1.26G/5.00G [05:08<18:36, 3.35MB/model-00001-of-00002.safetensors:  25%|███▌          | 1.27G/5.00G [05:11<17:46, 3.49MB/model-00001-of-00002.safetensors:  26%|███▌          | 1.28G/5.00G [05:11<15:59, 3.88MB/model-00001-of-00002.safetensors:  27%|███▋          | 1.32G/5.00G [05:13<06:58, 8.78MB/model-00001-of-00002.safetensors:  27%|███▋          | 1.34G/5.00G [05:13<06:06, 9.99MB/model-00001-of-00002.safetensors:  27%|███▊          | 1.35G/5.00G [05:19<10:37, 5.72MB/model-00001-of-00002.safetensors:  28%|███▉          | 1.40G/5.00G [05:20<05:31, 10.9MB/model-00001-of-00002.safetensors:  28%|███▉          | 1.41G/5.00G [05:23<06:36, 9.04MB/model-00001-of-00002.safetensors:  30%|████▏         | 1.48G/5.00G [05:25<03:39, 16.0MB/model-00001-of-00002.safetensors:  30%|████▏         | 1.49G/5.00G [05:35<09:54, 5.91MB/model-00001-of-00002.safetensors:  30%|████▏         | 1.50G/5.00G [05:40<12:38, 4.61MB/model-00001-of-00002.safetensors:  30%|████▏         | 1.51G/5.00G [05:43<12:03, 4.81MB/model-00001-of-00002.safetensors:  31%|████▎         | 1.55G/5.00G [05:43<07:29, 7.67MB/model-00001-of-00002.safetensors:  31%|████▎         | 1.55G/5.00G [05:45<07:57, 7.21MB/model-00001-of-00002.safetensors:  31%|████▍         | 1.56G/5.00G [05:47<08:57, 6.39MB/model-00001-of-00002.safetensors:  32%|████▍         | 1.58G/5.00G [05:51<10:23, 5.48MB/model-00001-of-00002.safetensors:  32%|████▍         | 1.60G/5.00G [05:54<09:47, 5.78MB/model-00001-of-00002.safetensors:  32%|████▌         | 1.61G/5.00G [05:54<07:23, 7.63MB/model-00001-of-00002.safetensors:  32%|████▌         | 1.62G/5.00G [05:57<11:07, 5.07MB/model-00001-of-00002.safetensors:  33%|████▌         | 1.65G/5.00G [05:59<06:32, 8.53MB/model-00001-of-00002.safetensors:  34%|████▊         | 1.71G/5.00G [06:04<05:20, 10.3MB/model-00001-of-00002.safetensors:  34%|████▊         | 1.71G/5.00G [06:04<05:13, 10.5MB/model-00001-of-00002.safetensors:  34%|████▊         | 1.72G/5.00G [06:13<12:10, 4.48MB/model-00001-of-00002.safetensors:  35%|████▊         | 1.73G/5.00G [06:14<11:35, 4.70MB/model-00001-of-00002.safetensors:  35%|████▊         | 1.74G/5.00G [06:15<10:54, 4.98MB/s]
+model-00001-of-00002.safetensors:  35%|████▉         | 1.74G/5.00G [06:22<19:50, 2.73MB/model-00001-of-00002.safetensors:  35%|████▉         | 1.76G/5.00G [06:23<13:08, 4.11MB/model-00001-of-00002.safetensors:  35%|████▉         | 1.77G/5.00G [06:26<12:52, 4.18MB/model-00001-of-00002.safetensors:  36%|█████         | 1.79G/5.00G [06:31<13:09, 4.06MB/model-00001-of-00002.safetensors:  36%|█████         | 1.80G/5.00G [06:33<11:18, 4.70MB/model-00001-of-00002.safetensors:  37%|█████▏        | 1.85G/5.00G [06:33<05:10, 10.1MB/model-00001-of-00002.safetensors:  38%|█████▎        | 1.90G/5.00G [06:34<02:58, 17.4MB/s]
+model-00001-of-00002.safetensors:  38%|█████▎        | 1.91G/5.00G [06:35<03:09, 16.3MB/model-00001-of-00002.safetensors:  38%|█████▎        | 1.91G/5.00G [06:35<03:13, 16.0MB/model-00001-of-00002.safetensors:  39%|█████▍        | 1.93G/5.00G [06:37<04:32, 11.3MB/model-00001-of-00002.safetensors:  39%|█████▍        | 1.93G/5.00G [06:38<04:52, 10.5MB/model-00001-of-00002.safetensors:  39%|█████▍        | 1.95G/5.00G [06:39<04:12, 12.1MB/model-00001-of-00002.safetensors:  39%|█████▍        | 1.95G/5.00G [06:39<03:37, 14.0MB/s]
+model-00001-of-00002.safetensors:  39%|█████▍        | 1.96G/5.00G [06:46<12:28, 4.05MB/s]
+model-00001-of-00002.safetensors:  40%|█████▌        | 2.00G/5.00G [06:55<11:50, 4.21MB/s]
+model-00001-of-00002.safetensors:  40%|█████▌        | 2.00G/5.00G [07:02<18:06, 2.75MB/model-00001-of-00002.safetensors:  41%|█████▊        | 2.05G/5.00G [07:05<08:38, 5.67MB/model-00001-of-00002.safetensors:  41%|█████▊        | 2.06G/5.00G [07:05<08:14, 5.93MB/model-00001-of-00002.safetensors:  42%|█████▊        | 2.09G/5.00G [07:06<05:56, 8.16MB/model-00001-of-00002.safetensors:  42%|█████▊        | 2.09G/5.00G [07:06<05:27, 8.87MB/model-00001-of-00002.safetensors:  42%|█████▉        | 2.10G/5.00G [07:07<05:04, 9.52MB/model-00001-of-00002.safetensors:  43%|█████▉        | 2.14G/5.00G [07:09<04:12, 11.3MB/model-00001-of-00002.safetensors:  43%|██████        | 2.14G/5.00G [07:12<05:38, 8.43MB/model-00001-of-00002.safetensors:  43%|██████        | 2.15G/5.00G [07:14<06:52, 6.90MB/s]
+model-00001-of-00002.safetensors:  43%|██████        | 2.16G/5.00G [07:22<15:13, 3.11MB/model-00001-of-00002.safetensors:  44%|██████▏       | 2.21G/5.00G [07:25<06:58, 6.65MB/model-00001-of-00002.safetensors:  44%|██████▏       | 2.22G/5.00G [07:27<07:15, 6.37MB/model-00001-of-00002.safetensors:  45%|██████▏       | 2.22G/5.00G [07:29<08:35, 5.38MB/model-00001-of-00002.safetensors:  45%|██████▏       | 2.23G/5.00G [07:30<08:15, 5.59MB/model-00001-of-00002.safetensors:  45%|██████▎       | 2.24G/5.00G [07:31<07:41, 5.97MB/model-00001-of-00002.safetensors:  45%|██████▎       | 2.25G/5.00G [07:33<07:25, 6.15MB/model-00001-of-00002.safetensors:  45%|██████▎       | 2.27G/5.00G [07:33<05:17, 8.60MB/model-00001-of-00002.safetensors:  45%|██████▎       | 2.27G/5.00G [07:36<07:35, 5.98MB/model-00001-of-00002.safetensors:  46%|██████▍       | 2.28G/5.00G [07:37<06:21, 7.12MB/s]
+model-00001-of-00002.safetensors:  46%|██████▍       | 2.28G/5.00G [07:40<10:49, 4.18MB/model-00001-of-00002.safetensors:  47%|██████▌       | 2.35G/5.00G [07:44<04:23, 10.0MB/model-00001-of-00002.safetensors:  47%|██████▋       | 2.36G/5.00G [07:44<03:53, 11.3MB/model-00001-of-00002.safetensors:  48%|██████▋       | 2.38G/5.00G [07:45<03:26, 12.7MB/model-00001-of-00002.safetensors:  48%|██████▋       | 2.38G/5.00G [07:46<03:53, 11.2MB/model-00001-of-00002.safetensors:  48%|██████▋       | 2.40G/5.00G [07:46<03:01, 14.4MB/model-00001-of-00002.safetensors:  48%|██████▋       | 2.40G/5.00G [07:48<05:12, 8.29MB/model-00001-of-00002.safetensors:  48%|██████▊       | 2.41G/5.00G [07:49<05:13, 8.26MB/s]
+model-00001-of-00002.safetensors:  48%|██████▊       | 2.42G/5.00G [07:58<14:47, 2.90MB/model-00001-of-00002.safetensors:  49%|██████▊       | 2.43G/5.00G [08:01<12:33, 3.40MB/model-00001-of-00002.safetensors:  49%|██████▊       | 2.44G/5.00G [08:02<09:46, 4.35MB/model-00001-of-00002.safetensors:  50%|██████▉       | 2.49G/5.00G [08:08<07:35, 5.50MB/model-00001-of-00002.safetensors:  50%|███████       | 2.51G/5.00G [08:10<05:36, 7.37MB/model-00001-of-00002.safetensors:  51%|███████       | 2.53G/5.00G [08:13<06:44, 6.10MB/model-00001-of-00002.safetensors:  51%|███████       | 2.54G/5.00G [08:16<07:19, 5.59MB/s]
+model-00001-of-00002.safetensors:  52%|███████▎      | 2.59G/5.00G [08:18<03:59, 10.0MB/model-00001-of-00002.safetensors:  52%|███████▎      | 2.60G/5.00G [08:18<03:39, 10.9MB/model-00001-of-00002.safetensors:  52%|███████▎      | 2.62G/5.00G [08:19<02:52, 13.8MB/model-00001-of-00002.safetensors:  53%|███████▎      | 2.63G/5.00G [08:19<02:44, 14.4MB/model-00001-of-00002.safetensors:  53%|███████▍      | 2.63G/5.00G [08:21<03:28, 11.3MB/model-00001-of-00002.safetensors:  53%|███████▍      | 2.64G/5.00G [08:22<04:17, 9.18MB/model-00001-of-00002.safetensors:  53%|███████▍      | 2.64G/5.00G [08:24<06:41, 5.86MB/model-00001-of-00002.safetensors:  53%|███████▍      | 2.66G/5.00G [08:25<04:42, 8.27MB/model-00001-of-00002.safetensors:  54%|███████▌      | 2.71G/5.00G [08:31<04:54, 7.78MB/s]
+model-00001-of-00002.safetensors:  54%|███████▌      | 2.71G/5.00G [08:35<06:43, 5.66MB/model-00001-of-00002.safetensors:  55%|███████▋      | 2.75G/5.00G [08:42<06:51, 5.45MB/model-00001-of-00002.safetensors:  55%|███████▋      | 2.76G/5.00G [08:43<05:56, 6.27MB/model-00001-of-00002.safetensors:  56%|███████▊      | 2.77G/5.00G [08:46<06:50, 5.40MB/model-00001-of-00002.safetensors:  56%|███████▊      | 2.81G/5.00G [08:51<06:21, 5.73MB/model-00001-of-00002.safetensors:  56%|███████▉      | 2.81G/5.00G [08:53<06:55, 5.26MB/model-00001-of-00002.safetensors:  57%|███████▉      | 2.84G/5.00G [08:56<05:05, 7.04MB/model-00001-of-00002.safetensors:  57%|███████▉      | 2.85G/5.00G [08:58<05:36, 6.37MB/model-00001-of-00002.safetensors:  57%|████████      | 2.86G/5.00G [08:59<05:27, 6.52MB/model-00001-of-00002.safetensors:  57%|████████      | 2.87G/5.00G [08:59<04:31, 7.84MB/model-00001-of-00002.safetensors:  58%|████████▏     | 2.92G/5.00G [09:01<02:15, 15.4MB/model-00001-of-00002.safetensors:  59%|████████▏     | 2.92G/5.00G [09:04<04:12, 8.19MB/model-00001-of-00002.safetensors:  59%|████████▏     | 2.94G/5.00G [09:11<07:35, 4.52MB/model-00001-of-00002.safetensors:  59%|████████▎     | 2.95G/5.00G [09:13<06:44, 5.06MB/model-00001-of-00002.safetensors:  59%|████████▎     | 2.96G/5.00G [09:14<05:34, 6.07MB/model-00001-of-00002.safetensors:  59%|████████▎     | 2.97G/5.00G [09:15<05:07, 6.59MB/s]
+model-00001-of-00002.safetensors:  60%|████████▎     | 2.97G/5.00G [09:18<07:51, 4.29MB/model-00001-of-00002.safetensors:  60%|████████▎     | 2.97G/5.00G [09:22<13:03, 2.58MB/model-00001-of-00002.safetensors:  60%|████████▍     | 3.02G/5.00G [09:22<04:02, 8.18MB/model-00001-of-00002.safetensors:  61%|████████▍     | 3.03G/5.00G [09:23<03:12, 10.2MB/model-00001-of-00002.safetensors:  61%|████████▌     | 3.04G/5.00G [09:27<05:04, 6.42MB/model-00001-of-00002.safetensors:  61%|████████▌     | 3.05G/5.00G [09:27<03:51, 8.39MB/model-00001-of-00002.safetensors:  62%|████████▋     | 3.11G/5.00G [09:29<02:03, 15.3MB/s]
+model-00001-of-00002.safetensors:  62%|████████▋     | 3.12G/5.00G [09:35<04:38, 6.75MB/model-00001-of-00002.safetensors:  62%|████████▋     | 3.12G/5.00G [09:36<04:53, 6.37MB/model-00001-of-00002.safetensors:  63%|████████▊     | 3.13G/5.00G [09:41<06:39, 4.65MB/model-00001-of-00002.safetensors:  64%|████████▉     | 3.20G/5.00G [09:43<02:32, 11.7MB/model-00001-of-00002.safetensors:  64%|█████████     | 3.21G/5.00G [09:45<02:50, 10.4MB/model-00001-of-00002.safetensors:  65%|█████████     | 3.22G/5.00G [09:50<04:53, 6.03MB/model-00001-of-00002.safetensors:  65%|█████████     | 3.23G/5.00G [09:51<04:52, 6.04MB/model-00001-of-00002.safetensors:  65%|█████████     | 3.24G/5.00G [09:55<05:35, 5.23MB/model-00001-of-00002.safetensors:  65%|█████████▏    | 3.26G/5.00G [10:00<06:59, 4.15MB/model-00001-of-00002.safetensors:  65%|█████████▏    | 3.26G/5.00G [10:03<08:04, 3.57MB/model-00001-of-00002.safetensors:  65%|█████████▏    | 3.27G/5.00G [10:06<09:53, 2.91MB/model-00001-of-00002.safetensors:  66%|█████████▏    | 3.29G/5.00G [10:06<05:04, 5.59MB/model-00001-of-00002.safetensors:  66%|█████████▏    | 3.30G/5.00G [10:09<05:42, 4.96MB/model-00001-of-00002.safetensors:  66%|█████████▎    | 3.31G/5.00G [10:13<06:06, 4.60MB/model-00001-of-00002.safetensors:  67%|█████████▎    | 3.34G/5.00G [10:13<03:22, 8.16MB/s]
+model-00001-of-00002.safetensors:  67%|█████████▍    | 3.35G/5.00G [10:16<04:08, 6.61MB/model-00001-of-00002.safetensors:  68%|█████████▍    | 3.38G/5.00G [10:22<05:02, 5.35MB/s]
+model-00001-of-00002.safetensors:  68%|█████████▌    | 3.40G/5.00G [10:25<04:49, 5.52MB/model-00001-of-00002.safetensors:  69%|█████████▋    | 3.45G/5.00G [10:25<02:16, 11.4MB/model-00001-of-00002.safetensors:  70%|█████████▊    | 3.50G/5.00G [10:28<01:44, 14.3MB/model-00001-of-00002.safetensors:  70%|█████████▊    | 3.52G/5.00G [10:29<01:33, 15.9MB/model-00001-of-00002.safetensors:  71%|█████████▉    | 3.56G/5.00G [10:30<01:11, 20.2MB/model-00001-of-00002.safetensors:  71%|█████████▉    | 3.57G/5.00G [10:33<01:59, 12.0MB/model-00001-of-00002.safetensors:  72%|██████████    | 3.61G/5.00G [10:36<01:43, 13.4MB/model-00001-of-00002.safetensors:  72%|██████████▏   | 3.62G/5.00G [10:36<01:32, 14.8MB/model-00001-of-00002.safetensors:  73%|██████████▏   | 3.66G/5.00G [10:36<01:02, 21.4MB/model-00001-of-00002.safetensors:  73%|██████████▎   | 3.66G/5.00G [10:38<01:33, 14.2MB/model-00001-of-00002.safetensors:  73%|██████████▎   | 3.67G/5.00G [10:39<01:28, 15.0MB/model-00001-of-00002.safetensors:  74%|██████████▎   | 3.68G/5.00G [10:46<04:18, 5.07MB/model-00001-of-00002.safetensors:  74%|██████████▎   | 3.70G/5.00G [11:00<08:47, 2.46MB/model-00001-of-00002.safetensors:  74%|██████████▍   | 3.71G/5.00G [11:02<07:29, 2.87MB/model-00001-of-00002.safetensors:  75%|██████████▍   | 3.75G/5.00G [11:03<03:39, 5.69MB/model-00001-of-00002.safetensors:  75%|██████████▌   | 3.77G/5.00G [11:05<03:14, 6.32MB/model-00001-of-00002.safetensors:  76%|██████████▋   | 3.81G/5.00G [11:15<03:35, 5.47MB/model-00001-of-00002.safetensors:  76%|██████████▋   | 3.82G/5.00G [11:16<03:30, 5.59MB/model-00001-of-00002.safetensors:  77%|██████████▊   | 3.87G/5.00G [11:18<02:02, 9.14MB/model-00001-of-00002.safetensors:  78%|██████████▉   | 3.89G/5.00G [11:18<01:35, 11.5MB/model-00001-of-00002.safetensors:  78%|██████████▉   | 3.90G/5.00G [11:21<02:17, 7.98MB/model-00001-of-00002.safetensors:  78%|██████████▉   | 3.91G/5.00G [11:22<01:59, 9.04MB/model-00001-of-00002.safetensors:  79%|███████████   | 3.96G/5.00G [11:24<01:23, 12.5MB/model-00001-of-00002.safetensors:  79%|███████████▏  | 3.97G/5.00G [11:26<01:26, 11.9MB/model-00001-of-00002.safetensors:  80%|███████████▏  | 3.98G/5.00G [11:27<01:26, 11.7MB/model-00001-of-00002.safetensors:  80%|███████████▏  | 4.00G/5.00G [11:29<01:51, 9.01MB/model-00001-of-00002.safetensors:  80%|███████████▏  | 4.01G/5.00G [11:30<01:27, 11.3MB/model-00001-of-00002.safetensors:  81%|███████████▎  | 4.03G/5.00G [11:31<01:13, 13.0MB/model-00001-of-00002.safetensors:  82%|███████████▍  | 4.09G/5.00G [11:31<00:34, 26.1MB/model-00001-of-00002.safetensors:  82%|███████████▍  | 4.10G/5.00G [11:34<01:00, 14.8MB/model-00001-of-00002.safetensors:  82%|███████████▌  | 4.11G/5.00G [11:35<01:04, 13.8MB/model-00001-of-00002.safetensors:  83%|███████████▌  | 4.12G/5.00G [11:36<00:53, 16.2MB/model-00001-of-00002.safetensors:  83%|███████████▌  | 4.14G/5.00G [11:41<01:55, 7.43MB/model-00001-of-00002.safetensors:  84%|███████████▋  | 4.19G/5.00G [11:42<00:58, 13.7MB/model-00001-of-00002.safetensors:  84%|███████████▊  | 4.20G/5.00G [11:43<00:52, 15.2MB/model-00001-of-00002.safetensors:  85%|███████████▊  | 4.22G/5.00G [11:44<00:56, 13.8MB/model-00001-of-00002.safetensors:  85%|███████████▊  | 4.24G/5.00G [11:46<01:07, 11.3MB/model-00001-of-00002.safetensors:  85%|███████████▉  | 4.26G/5.00G [11:50<01:13, 9.96MB/model-00001-of-00002.safetensors:  86%|████████████  | 4.29G/5.00G [11:52<01:05, 10.8MB/model-00002-of-00002.safetensors: 100%|█████████████████| 564M/564M [11:53<00:00, 791kB/s]del-00002-of-00002.safetensors: 100%|█████████████████| 564M/564M [11:53<00:00, 955kB/s]
+model-00001-of-00002.safetensors:  87%|████████████▏ | 4.34G/5.00G [11:53<00:36, 18.0MB/model-00001-of-00002.safetensors:  87%|████████████▏ | 4.36G/5.00G [11:54<00:40, 15.7MB/model-00001-of-00002.safetensors:  88%|████████████▎ | 4.41G/5.00G [11:56<00:30, 19.6MB/model-00001-of-00002.safetensors:  89%|████████████▍ | 4.42G/5.00G [11:57<00:29, 19.4MB/model-00001-of-00002.safetensors:  89%|████████████▌ | 4.47G/5.00G [11:58<00:23, 22.7MB/model-00001-of-00002.safetensors:  90%|████████████▌ | 4.49G/5.00G [12:01<00:34, 14.9MB/model-00001-of-00002.safetensors:  90%|████████████▋ | 4.52G/5.00G [12:03<00:31, 15.1MB/model-00001-of-00002.safetensors:  91%|████████████▊ | 4.56G/5.00G [12:05<00:23, 18.4MB/model-00001-of-00002.safetensors:  92%|████████████▉ | 4.61G/5.00G [12:05<00:13, 28.8MB/model-00001-of-00002.safetensors:  93%|█████████████ | 4.65G/5.00G [12:06<00:11, 28.8MB/model-00001-of-00002.safetensors:  94%|█████████████▏| 4.69G/5.00G [12:12<00:20, 14.8MB/model-00001-of-00002.safetensors:  95%|█████████████▎| 4.74G/5.00G [12:12<00:11, 22.6MB/model-00001-of-00002.safetensors:  96%|█████████████▍| 4.79G/5.00G [12:14<00:08, 23.9MB/model-00001-of-00002.safetensors:  97%|█████████████▌| 4.85G/5.00G [12:16<00:06, 24.4MB/model-00001-of-00002.safetensors:  98%|█████████████▋| 4.88G/5.00G [12:19<00:05, 20.8MB/model-00001-of-00002.safetensors:  98%|█████████████▊| 4.91G/5.00G [12:19<00:03, 24.9MB/model-00001-of-00002.safetensors:  99%|█████████████▉| 4.97G/5.00G [12:22<00:01, 23.0MB/model-00001-of-00002.safetensors: 100%|██████████████| 5.00G/5.00G [12:27<00:00, 6.68MB/s]
+Fetching 2 files:  50%|██████████████████                  | 1/2 [12:28<12:28, 748.27s/iFetching 2 files: 100%|████████████████████████████████████| 2/2 [12:28<00:00, 374.14s/it]
+Loading checkpoint shards: 100%|██████████████████████████| 2/2 [00:02<00:00,  1.41s/it]
+generation_config.json: 100%|██████████████████████████| 124/124 [00:00<00:00, 30.0kB/s]
+Model loaded!
+
+🔬 Starting experiment with 12 prompts
+
+
+Testing math...
+  [1/12] Calculate 847 * 923. Show your work....
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+      → 40.4s, 2.5 tok/s
+  [2/12] Solve for x: 5x + 12 = 47...
+      → 32.3s, 2.4 tok/s
+  [3/12] What is 23% of 850?...
+      → 5.5s, 2.4 tok/s
+
+Testing creative...
+  [4/12] Write a haiku about robots....
+      → 20.8s, 2.5 tok/s
+  [5/12] Describe a new color that doesn't exist....
+      → 40.0s, 2.5 tok/s
+  [6/12] Invent a word for missing a place you've never bee...
+      → 8.3s, 2.4 tok/s
+
+Testing factual...
+  [7/12] What is the capital of Brazil?...
+      → 14.1s, 2.5 tok/s
+  [8/12] When was the Declaration of Independence signed?...
+      → 40.0s, 2.5 tok/s
+  [9/12] Who painted the Mona Lisa?...
+      → 1.2s, 1.7 tok/s
+
+Testing reasoning...
+  [10/12] If all cats are mammals, and all mammals breathe a...
+      → 40.9s, 2.4 tok/s
+  [11/12] Is this valid: All birds fly. Penguins are birds. ...
+      → 33.4s, 2.4 tok/s
+  [12/12] Compare 'knowing how' vs 'knowing that'....
+      → 14.6s, 2.5 tok/s
+
+✅ Results saved to telemetry_20251122_105527.json
+
+Quick Summary:
+  math         → latency:  26.1s  |  tok/s:  2.4  |  cpu Δ: +32.7%
+  creative     → latency:  23.0s  |  tok/s:  2.5  |  cpu Δ: +27.3%
+  factual      → latency:  18.5s  |  tok/s:  2.2  |  cpu Δ: +27.1%
+  reasoning    → latency:  29.7s  |  tok/s:  2.4  |  cpu Δ: +24.5%
+(venv) jv@macmini ai-telemetry-test % nano telemetry_test_v2.py
+(venv) jv@macmini ai-telemetry-test % python telemetry_test_v2.py
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.0.2 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/Users/jv/Desktop/ai-telemetry-test/telemetry_test_v2.py", line 9, in <module>
+    import torch
+  File "/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/__init__.py", line 1477, in <module>
+    from .functional import *  # noqa: F403
+  File "/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/functional.py", line 9, in <module>
+    import torch.nn.functional as F
+  File "/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/nn/__init__.py", line 1, in <module>
+    from .modules import *  # noqa: F403
+  File "/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/nn/modules/__init__.py", line 35, in <module>
+    from .transformer import TransformerEncoder, TransformerDecoder, \
+  File "/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/nn/modules/transformer.py", line 20, in <module>
+    device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
+/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/nn/modules/transformer.py:20: UserWarning: Failed to initialize NumPy: _ARRAY_API not found (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:84.)
+  device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
+/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Loading model...
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards: 100%|██████████████████████████| 2/2 [00:02<00:00,  1.43s/it]
+Model loaded!
+
+🔬 Running EXPANDED experiment with 40 prompts
+This will take about 15-20 minutes
+
+
+============================================================
+Testing MATH (10 prompts)
+============================================================
+[ 1/40] Calculate 847 * 923. Show your work.                    The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+→  40.1s
+[ 2/40] Solve for x: 5x + 12 = 47                               →  30.8s
+[ 3/40] What is 23% of 850?                                     →   5.5s
+[ 4/40] Divide 1,296 by 18                                      →  39.8s
+[ 5/40] What is the square root of 144?                         →  39.7s
+[ 6/40] Calculate (25 + 17) * 3                                 →  39.8s
+[ 7/40] Solve: 2x - 8 = 24                                      →   6.3s
+[ 8/40] What is 15% of 200?                                     →   5.5s
+[ 9/40] Multiply 156 by 7                                       →  24.0s
+[10/40] Calculate 999 + 1,234                                   →  39.8s
+
+============================================================
+Testing CREATIVE (10 prompts)
+============================================================
+[11/40] Write a haiku about robots.                             →  13.3s
+[12/40] Describe a new color that doesn't exist.                →  20.4s
+[13/40] Invent a word for missing a place you've never been.    →   3.6s
+[14/40] Write a short poem about silence.                       →  26.3s
+[15/40] Describe what happiness tastes like.                    →  40.8s
+[16/40] Invent a name for a new emotion.                        →   9.2s
+[17/40] Write a haiku about technology.                         →  27.9s
+[18/40] Describe the sound of loneliness.                       →  22.7s
+[19/40] Create a metaphor for time passing.                     →   9.6s
+[20/40] Describe what dreams smell like.                        →  44.2s
+
+============================================================
+Testing FACTUAL (10 prompts)
+============================================================
+[21/40] What is the capital of Brazil?                          →   7.4s
+[22/40] When was the Declaration of Independence signed?        →  44.3s
+[23/40] Who painted the Mona Lisa?                              →   1.3s
+[24/40] What is the largest planet in our solar system?         →  44.8s
+[25/40] Who wrote Romeo and Juliet?                             →  44.2s
+[26/40] What year did World War 2 end?                          →  44.3s
+[27/40] What is the capital of Japan?                           →  44.3s
+[28/40] Who invented the telephone?                             →  12.6s
+[29/40] What is the tallest mountain on Earth?                  →   1.3s
+[30/40] What is the speed of light?                             →  19.6s
+
+============================================================
+Testing REASONING (10 prompts)
+============================================================
+[31/40] If all cats are mammals, and all mammals breathe air, w →  44.8s
+[32/40] Is this valid: All birds fly. Penguins are birds. So pe →  44.7s
+[33/40] Compare 'knowing how' vs 'knowing that'.                →  44.4s
+[34/40] What is the flaw in: Everyone I know likes pizza, so ev →  46.1s
+[35/40] If A is taller than B, and B is taller than C, who is s →  28.3s
+[36/40] Is correlation the same as causation? Explain briefly.  →   1.5s
+[37/40] What's wrong with: After we got a cat, it rained. There →  47.1s
+[38/40] If some doctors are women, and all women are people, wh →  46.2s
+[39/40] Can something be true but unknowable? Brief answer.     →  44.5s
+[40/40] What's the difference between necessary and sufficient  →  45.7s
+
+============================================================
+✅ Results saved to telemetry_expanded_20251122_111944.json
+============================================================
+
+DETAILED SUMMARY:
+
+MATH        
+  Latency:      27.1s  (range: 5.5s - 40.1s)
+  Tokens/sec:    2.5
+  CPU delta:   +10.0%
+  Memory:      +20.6 MB
+  Avg output:   67.8 tokens
+
+CREATIVE    
+  Latency:      21.8s  (range: 3.6s - 44.2s)
+  Tokens/sec:    2.3
+  CPU delta:   +10.2%
+  Memory:       +0.2 MB
+  Avg output:   51.3 tokens
+
+FACTUAL     
+  Latency:      26.4s  (range: 1.3s - 44.8s)
+  Tokens/sec:    2.1
+  CPU delta:   +12.4%
+  Memory:       +1.4 MB
+  Avg output:   59.2 tokens
+
+REASONING   
+  Latency:      39.3s  (range: 1.5s - 47.1s)
+  Tokens/sec:    2.1
+  CPU delta:    +9.6%
+  Memory:       +7.1 MB
+  Avg output:   86.0 tokens
+
+(venv) jv@macmini ai-telemetry-test % nano analyze_telemetry.py
+(venv) jv@macmini ai-telemetry-test % python analyze_telemetry.py
+Traceback (most recent call last):
+  File "/Users/jv/Desktop/ai-telemetry-test/analyze_telemetry.py", line 10, in <module>
+    with open(filename, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'telemetry_expanded_20251122_110113.json'
+(venv) jv@macmini ai-telemetry-test % ls *.json
+telemetry_20251122_105527.json		telemetry_expanded_20251122_111944.json
+(venv) jv@macmini ai-telemetry-test % (venv) jv@macmini ai-telemetry-test % ls *.json
+telemetry_20251122_105527.json          telemetry_expanded_20251122_111944.json
+(venv) jv@macmini ai-telemetry-test %
+zsh: parse error near `jv@macmini'
+(venv) jv@macmini ai-telemetry-test % nano analyze_telemetry.py
+(venv) jv@macmini ai-telemetry-test % python analyze_telemetry.py
+======================================================================
+NORMALIZED TELEMETRY ANALYSIS
+Controlling for Output Length
+======================================================================
+
+======================================================================
+RAW METRICS (Before Normalization)
+======================================================================
+
+MATH (n=10):
+  Latency:        27.1s
+  Output tokens:   67.8
+  Memory delta:    20.6 MB
+  CPU delta:      +10.0%
+
+CREATIVE (n=10):
+  Latency:        21.8s
+  Output tokens:   51.3
+  Memory delta:     0.2 MB
+  CPU delta:      +10.2%
+
+FACTUAL (n=8):
+  Latency:        32.7s
+  Output tokens:   73.5
+  Memory delta:     1.8 MB
+  CPU delta:      +11.9%
+
+REASONING (n=9):
+  Latency:        43.5s
+  Output tokens:   95.3
+  Memory delta:     7.9 MB
+  CPU delta:       +9.8%
+
+======================================================================
+NORMALIZED METRICS (Per Token)
+======================================================================
+
+MATH (n=10):
+  ms/token:       405.3 (±10.2)
+  MB/token:       0.210 (±0.587)
+  CPU%/token:     +0.25 (±0.26)
+
+CREATIVE (n=10):
+  ms/token:       430.3 (±25.0)
+  MB/token:       0.003 (±0.004)
+  CPU%/token:     +0.31 (±0.24)
+
+FACTUAL (n=8):
+  ms/token:       447.1 (±6.2)
+  MB/token:       0.018 (±0.025)
+  CPU%/token:     +0.28 (±0.29)
+
+REASONING (n=9):
+  ms/token:       458.1 (±14.6)
+  MB/token:       0.079 (±0.088)
+  CPU%/token:     +0.10 (±0.04)
+
+======================================================================
+KEY FINDINGS
+======================================================================
+
+⏱️  SPEED (ms per token) - Lower is faster:
+  1. math        405.3 ms/token
+  2. creative    430.3 ms/token
+  3. factual     447.1 ms/token
+  4. reasoning   458.1 ms/token
+
+💾 MEMORY (MB per token) - Higher means more memory used:
+  1. creative    0.003 MB/token
+  2. factual     0.018 MB/token
+  3. reasoning   0.079 MB/token
+  4. math        0.210 MB/token
+
+🔥 CPU (% per token) - Higher means more CPU intensive:
+  1. reasoning   +0.10% /token
+  2. math        +0.25% /token
+  3. factual     +0.28% /token
+  4. creative    +0.31% /token
+
+======================================================================
+VARIANCE ANALYSIS
+======================================================================
+
+Speed variance:  52.9 ms/token (13.0% difference)
+Memory variance: 0.207 MB/token (7060.4% difference)
+CPU variance:    0.21%/token (203.7% difference)
+
+======================================================================
+CONCLUSION
+======================================================================
+
+After controlling for output length:
+  Speed differences:  ✅ SIGNIFICANT
+  Memory differences: ✅ SIGNIFICANT
+  CPU differences:    ✅ SIGNIFICANT
+
+🎯 KEY FINDING: MATH uses 71.6x more memory per token than CREATIVE
+
+======================================================================
+(venv) jv@macmini ai-telemetry-test % nano analyze_cleaned.py
+(venv) jv@macmini ai-telemetry-test % python analyze_cleaned.py
+======================================================================
+CLEANED DATA ANALYSIS - OUTLIER REMOVAL
+======================================================================
+
+STEP 1: IDENTIFYING OUTLIERS
+----------------------------------------------------------------------
+
+MATH:
+  Mean memory: 20.60 MB
+  Std dev:     58.80 MB
+  Threshold:   138.20 MB (mean + 2σ)
+  🚨 OUTLIERS FOUND: 1
+     - 187.8 MB: 'Calculate 847 * 923. Show your work....'
+
+CREATIVE:
+  Mean memory: 0.23 MB
+  Std dev:     0.44 MB
+  Threshold:   1.11 MB (mean + 2σ)
+
+FACTUAL:
+  Mean memory: 1.78 MB
+  Std dev:     2.52 MB
+  Threshold:   6.81 MB (mean + 2σ)
+  🚨 OUTLIERS FOUND: 1
+     - 6.8 MB: 'What is the largest planet in our solar system?...'
+
+REASONING:
+  Mean memory: 7.89 MB
+  Std dev:     8.83 MB
+  Threshold:   25.56 MB (mean + 2σ)
+
+======================================================================
+STEP 2: CLEANED DATASET
+======================================================================
+
+Total outliers removed: 2
+
+======================================================================
+BEFORE vs AFTER CLEANING
+======================================================================
+
+MATH: 10 samples → 9 samples (1 removed)
+
+CREATIVE: 10 samples → 10 samples (0 removed)
+
+FACTUAL: 8 samples → 7 samples (1 removed)
+
+REASONING: 9 samples → 9 samples (0 removed)
+
+======================================================================
+NORMALIZED METRICS (CLEANED DATA)
+======================================================================
+
+MATH (n=9):
+  ms/token:       405.7 (±10.7)
+  MB/token:      0.0244 (±0.0228)
+  CPU%/token:     +0.24 (±0.27)
+
+CREATIVE (n=10):
+  ms/token:       430.3 (±25.0)
+  MB/token:      0.0029 (±0.0042)
+  CPU%/token:     +0.31 (±0.24)
+
+FACTUAL (n=7):
+  ms/token:       447.0 (±6.7)
+  MB/token:      0.0107 (±0.0159)
+  CPU%/token:     +0.30 (±0.30)
+
+REASONING (n=9):
+  ms/token:       458.1 (±14.6)
+  MB/token:      0.0789 (±0.0883)
+  CPU%/token:     +0.10 (±0.04)
+
+======================================================================
+KEY FINDINGS (CLEANED DATA)
+======================================================================
+
+⏱️  SPEED (ms per token):
+  1. math        405.7 ms/token
+  2. creative    430.3 ms/token
+  3. factual     447.0 ms/token
+  4. reasoning   458.1 ms/token
+
+💾 MEMORY (MB per token):
+  1. creative    0.0029 MB/token
+  2. factual     0.0107 MB/token
+  3. math        0.0244 MB/token
+  4. reasoning   0.0789 MB/token
+
+🔥 CPU (% per token):
+  1. reasoning   +0.10% /token
+  2. math        +0.24% /token
+  3. factual     +0.30% /token
+  4. creative    +0.31% /token
+
+======================================================================
+VARIANCE ANALYSIS
+======================================================================
+
+Speed variance:  52.4 ms/token (12.9% difference)
+Memory variance: 0.0760 MB/token (2593.0% difference)
+CPU variance:    0.21%/token (203.7% difference)
+
+======================================================================
+FINAL VERDICT
+======================================================================
+
+🎯 ENTROPY SIGNATURE TEST:
+   ✅ CONFIRMED: Creative tasks use 1.3x more CPU per token than Math
+   This supports the 'flat probability distribution' hypothesis!
+
+======================================================================
+(venv) jv@macmini ai-telemetry-test % nano phase3_experiment.py
+
+(venv) jv@macmini ai-telemetry-test % python phase3_experiment.py
+
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.0.2 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/Users/jv/Desktop/ai-telemetry-test/phase3_experiment.py", line 10, in <module>
+    import torch
+  File "/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/__init__.py", line 1477, in <module>
+    from .functional import *  # noqa: F403
+  File "/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/functional.py", line 9, in <module>
+    import torch.nn.functional as F
+  File "/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/nn/__init__.py", line 1, in <module>
+    from .modules import *  # noqa: F403
+  File "/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/nn/modules/__init__.py", line 35, in <module>
+    from .transformer import TransformerEncoder, TransformerDecoder, \
+  File "/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/nn/modules/transformer.py", line 20, in <module>
+    device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
+/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/nn/modules/transformer.py:20: UserWarning: Failed to initialize NumPy: _ARRAY_API not found (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:84.)
+  device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
+/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+======================================================================
+PHASE 3: ENTROPY SIGNATURE VALIDATION
+Double Control Protocol + Temperature Manipulation
+======================================================================
+
+Loading Phi-2 model...
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards: 100%|██████████████████████████| 2/2 [00:02<00:00,  1.45s/it]
+Model loaded!
+
+
+======================================================================
+WARMUP RUN (preventing cold start artifacts)
+======================================================================
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Traceback (most recent call last):
+  File "/Users/jv/Desktop/ai-telemetry-test/phase3_experiment.py", line 192, in <module>
+    _ = capture_telemetry('warmup', warmup_prompt, 0.7, 'warmup')
+  File "/Users/jv/Desktop/ai-telemetry-test/phase3_experiment.py", line 111, in capture_telemetry
+    outputs = model.generate(
+  File "/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/transformers/generation/utils.py", line 2484, in generate
+    expand_size=max(generation_config.num_beams, generation_config.num_return_sequences),
+TypeError: '>' not supported between instances of 'int' and 'NoneType'
+(venv) jv@macmini ai-telemetry-test % python phase3_experiment.py
+
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.0.2 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/Users/jv/Desktop/ai-telemetry-test/phase3_experiment.py", line 10, in <module>
+    import torch
+  File "/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/__init__.py", line 1477, in <module>
+    from .functional import *  # noqa: F403
+  File "/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/functional.py", line 9, in <module>
+    import torch.nn.functional as F
+  File "/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/nn/__init__.py", line 1, in <module>
+    from .modules import *  # noqa: F403
+  File "/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/nn/modules/__init__.py", line 35, in <module>
+    from .transformer import TransformerEncoder, TransformerDecoder, \
+  File "/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/nn/modules/transformer.py", line 20, in <module>
+    device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
+/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/nn/modules/transformer.py:20: UserWarning: Failed to initialize NumPy: _ARRAY_API not found (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:84.)
+  device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
+/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+======================================================================
+PHASE 3: ENTROPY SIGNATURE VALIDATION
+Double Control Protocol + Temperature Manipulation
+======================================================================
+
+Loading Phi-2 model...
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards: 100%|██████████████████████████| 2/2 [00:02<00:00,  1.38s/it]
+Model loaded!
+
+
+======================================================================
+WARMUP RUN (preventing cold start artifacts)
+======================================================================
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Warmup complete!
+
+
+======================================================================
+RUNNING: Experiment A: Normal Sampling (Temp=0.7) (Temperature=0.7)
+======================================================================
+Total prompts: 20
+Each prompt: ~50 input tokens, forced 20-word output
+
+
+MATH:
+  [ 1/20] Calculate 847 * 923                                →  13.1s, 30 tok
+  [ 2/20] Solve for x: 5x + 12 = 47                          →  13.0s, 30 tok
+  [ 3/20] What is 23% of 850?                                →  12.9s, 30 tok
+  [ 4/20] Divide 1,296 by 18                                 →  12.9s, 30 tok
+  [ 5/20] Calculate (25 + 17) * 3                            →  13.0s, 30 tok
+
+CREATIVE:
+  [ 6/20] Write a haiku about robots                         →   9.8s, 22 tok
+  [ 7/20] Describe a new color                               →  12.9s, 30 tok
+  [ 8/20] Invent a word for nostalgia                        →  13.0s, 30 tok
+  [ 9/20] Write about silence                                →  12.9s, 30 tok
+  [10/20] Describe what happiness tastes like                →  13.0s, 30 tok
+
+FACTUAL:
+  [11/20] What is the capital of Brazil?                     →   4.2s, 8 tok
+  [12/20] When was the Declaration of Independence signed?   →   1.9s, 2 tok
+  [13/20] Who painted the Mona Lisa?                         →  11.8s, 27 tok
+  [14/20] What is the largest planet?                        →  12.9s, 30 tok
+  [15/20] Who wrote Romeo and Juliet?                        →   7.0s, 15 tok
+
+REASONING:
+  [16/20] If all cats are mammals, and all mammals breathe a →   5.6s, 11 tok
+  [17/20] Is this valid: All birds fly, penguins are birds,  →  13.1s, 30 tok
+  [18/20] What's wrong with: Everyone I know likes pizza, so →  13.1s, 30 tok
+  [19/20] If A > B and B > C, who is shortest?               →  13.6s, 30 tok
+  [20/20] Is correlation the same as causation?              →  14.7s, 30 tok
+
+⏸️  Pause between experiments...
+
+======================================================================
+RUNNING: Experiment B: Greedy Decoding (Temp=0.0) (Temperature=0.0)
+======================================================================
+Total prompts: 20
+Each prompt: ~50 input tokens, forced 20-word output
+
+
+MATH:
+  [ 1/20] Calculate 847 * 923                                →  13.4s, 30 tok
+  [ 2/20] Solve for x: 5x + 12 = 47                          →  14.5s, 30 tok
+  [ 3/20] What is 23% of 850?                                →  14.4s, 30 tok
+  [ 4/20] Divide 1,296 by 18                                 →  14.4s, 30 tok
+  [ 5/20] Calculate (25 + 17) * 3                            →  14.5s, 30 tok
+
+CREATIVE:
+  [ 6/20] Write a haiku about robots                         →  14.4s, 30 tok
+  [ 7/20] Describe a new color                               →  14.4s, 30 tok
+  [ 8/20] Invent a word for nostalgia                        →  14.4s, 30 tok
+  [ 9/20] Write about silence                                →  14.3s, 30 tok
+  [10/20] Describe what happiness tastes like                →  14.5s, 30 tok
+
+FACTUAL:
+  [11/20] What is the capital of Brazil?                     →   7.3s, 14 tok
+  [12/20] When was the Declaration of Independence signed?   →  14.4s, 30 tok
+  [13/20] Who painted the Mona Lisa?                         →  14.4s, 30 tok
+  [14/20] What is the largest planet?                        →  12.6s, 26 tok
+  [15/20] Who wrote Romeo and Juliet?                        →  14.4s, 30 tok
+
+REASONING:
+  [16/20] If all cats are mammals, and all mammals breathe a →   5.6s, 10 tok
+  [17/20] Is this valid: All birds fly, penguins are birds,  →  14.6s, 30 tok
+  [18/20] What's wrong with: Everyone I know likes pizza, so →  14.5s, 30 tok
+  [19/20] If A > B and B > C, who is shortest?               →  14.5s, 30 tok
+  [20/20] Is correlation the same as causation?              →  14.8s, 30 tok
+
+======================================================================
+✅ Results saved to phase3_results_20251122_114904.json
+======================================================================
+
+======================================================================
+QUICK ANALYSIS
+======================================================================
+
+Experiment A (Temp=0.7):
+  math       →  432.5 ms/tok | CPU: +1.13%/tok | In: 64 | Out: 30
+  creative   →  434.1 ms/tok | CPU: +1.45%/tok | In: 60 | Out: 28
+  factual    →  563.6 ms/tok | CPU: +6.39%/tok | In: 62 | Out: 16
+  reasoning  →  464.2 ms/tok | CPU: +1.78%/tok | In: 69 | Out: 26
+
+Experiment B (Temp=0.0):
+  math       →  474.1 ms/tok | CPU: +1.37%/tok | In: 64 | Out: 30
+  creative   →  480.4 ms/tok | CPU: +1.38%/tok | In: 60 | Out: 30
+  factual    →  489.7 ms/tok | CPU: +1.73%/tok | In: 62 | Out: 26
+  reasoning  →  502.0 ms/tok | CPU: +1.95%/tok | In: 69 | Out: 26
+
+======================================================================
+ENTROPY SIGNATURE TEST
+======================================================================
+
+Creative Task CPU Usage:
+  Temp=0.7 (Normal): +1.45% per token
+  Temp=0.0 (Greedy): +1.38% per token
+  Change: -5.4%
+
+  ⚠️  Small decrease observed but not dramatic
+
+======================================================================
+Next step: Run detailed analysis with analyze_phase3.py
+======================================================================
+(venv) jv@macmini ai-telemetry-test % nano phase4_constraint_test.py
+(venv) jv@macmini ai-telemetry-test % python phase4_constraint_test.py
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.0.2 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/Users/jv/Desktop/ai-telemetry-test/phase4_constraint_test.py", line 10, in <module>
+    import torch
+  File "/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/__init__.py", line 1477, in <module>
+    from .functional import *  # noqa: F403
+  File "/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/functional.py", line 9, in <module>
+    import torch.nn.functional as F
+  File "/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/nn/__init__.py", line 1, in <module>
+    from .modules import *  # noqa: F403
+  File "/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/nn/modules/__init__.py", line 35, in <module>
+    from .transformer import TransformerEncoder, TransformerDecoder, \
+  File "/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/nn/modules/transformer.py", line 20, in <module>
+    device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
+/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/torch/nn/modules/transformer.py:20: UserWarning: Failed to initialize NumPy: _ARRAY_API not found (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:84.)
+  device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
+/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+======================================================================
+PHASE 4: THE CONSTRAINT TEST
+Format Uncertainty vs. Computational Cost
+======================================================================
+
+Loading Phi-2 model...
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards: 100%|██████████████████████████| 2/2 [00:02<00:00,  1.43s/it]
+Model loaded!
+
+Total prompts to test: 40
+(20 pairs = 40 prompts, randomized order)
+
+======================================================================
+WARMUP (preventing cold start)
+======================================================================
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Warmup complete!
+
+======================================================================
+RUNNING EXPERIMENT
+======================================================================
+[ 1/40] math       | constrained  | What is 847 times 923?                   →  20.0s,  50 tok
+[ 2/40] creative   | loose        | Write about silence                      →  19.9s,  50 tok
+[ 3/40] creative   | constrained  | Describe a new color                     →  12.9s,  32 tok
+[ 4/40] math       | loose        | Divide 1296 by 18                        →   5.8s,  14 tok
+[ 5/40] math       | loose        | What is the square root of 144?          →  12.9s,  32 tok
+[ 6/40] math       | loose        | What is 847 times 923?                   →   6.3s,  15 tok
+[ 7/40] factual    | constrained  | What is the capital of France?           →   4.3s,  10 tok
+[ 8/40] factual    | constrained  | Who was the first president of the Unite →   1.4s,   2 tok
+[ 9/40] creative   | loose        | Invent a word for nostalgia              →   9.3s,  23 tok
+[10/40] creative   | constrained  | Invent a word for nostalgia              →  13.7s,  34 tok
+[11/40] math       | constrained  | Calculate 23% of 850                     →  20.0s,  50 tok
+[12/40] reasoning  | constrained  | What's wrong with: Everyone I know likes →   5.8s,  13 tok
+[13/40] factual    | constrained  | When did World War 2 end?                →   1.4s,   2 tok
+[14/40] factual    | loose        | Who painted the Mona Lisa?               →   4.3s,  10 tok
+[15/40] factual    | loose        | When did World War 2 end?                →  21.2s,  50 tok
+[16/40] factual    | loose        | What is the speed of light?              →  22.2s,  50 tok
+[17/40] creative   | loose        | Describe a new color                     →  22.2s,  50 tok
+[18/40] creative   | loose        | Describe what happiness tastes like      →  22.2s,  50 tok
+[19/40] math       | loose        | Solve for x: 5x + 12 = 47                →  22.4s,  50 tok
+[20/40] creative   | constrained  | Write a haiku about robots               →   9.0s,  19 tok
+[21/40] reasoning  | loose        | What's wrong with: Everyone I know likes →  22.6s,  50 tok
+[22/40] factual    | constrained  | Who painted the Mona Lisa?               →   1.3s,   2 tok
+[23/40] factual    | constrained  | What is the speed of light?              →   1.3s,   2 tok
+[24/40] reasoning  | constrained  | Is correlation the same as causation?    →   1.6s,   2 tok
+[25/40] creative   | loose        | Write a haiku about robots               →  20.0s,  45 tok
+[26/40] reasoning  | loose        | If all cats are mammals, and all mammals →  22.3s,  50 tok
+[27/40] math       | constrained  | Divide 1296 by 18                        →  22.4s,  50 tok
+[28/40] reasoning  | loose        | If A is taller than B, and B is taller t →  22.6s,  50 tok
+[29/40] math       | loose        | Calculate 23% of 850                     →   6.9s,  15 tok
+[30/40] factual    | loose        | What is the capital of France?           →   1.3s,   2 tok
+[31/40] math       | constrained  | Solve for x: 5x + 12 = 47                →  22.7s,  50 tok
+[32/40] reasoning  | constrained  | Is this valid: All birds fly, penguins a →  22.8s,  50 tok
+[33/40] math       | constrained  | What is the square root of 144?          →  22.3s,  50 tok
+[34/40] reasoning  | loose        | Is correlation the same as causation?    →  12.6s,  28 tok
+[35/40] creative   | constrained  | Describe what happiness tastes like      →  10.0s,  22 tok
+[36/40] reasoning  | constrained  | If A is taller than B, and B is taller t →  22.7s,  50 tok
+[37/40] factual    | loose        | Who was the first president of the Unite →  13.9s,  31 tok
+[38/40] reasoning  | constrained  | If all cats are mammals, and all mammals →   4.6s,   9 tok
+[39/40] reasoning  | loose        | Is this valid: All birds fly, penguins a →  19.2s,  42 tok
+[40/40] creative   | constrained  | Write about silence                      →   7.8s,  17 tok
+
+======================================================================
+✅ Results saved to phase4_results_20251122_120943.json
+======================================================================
+
+======================================================================
+QUICK ANALYSIS: LOOSE vs CONSTRAINED
+======================================================================
+
+FACTUAL:
+  Loose:        +5.33% CPU/tok |  474.1 ms/tok |  28.6 tokens avg
+  Constrained:  +17.10% CPU/tok |  631.2 ms/tok |   3.6 tokens avg
+  → CPU reduction: -220.6%
+
+MATH:
+  Loose:        +2.04% CPU/tok |  429.8 ms/tok |  25.2 tokens avg
+  Constrained:  +0.68% CPU/tok |  429.5 ms/tok |  50.0 tokens avg
+  → CPU reduction: +66.6%
+
+CREATIVE:
+  Loose:        +1.01% CPU/tok |  427.5 ms/tok |  43.6 tokens avg
+  Constrained:  +1.77% CPU/tok |  438.8 ms/tok |  24.8 tokens avg
+  → CPU reduction: -76.1%
+
+REASONING:
+  Loose:        +0.97% CPU/tok |  451.5 ms/tok |  44.0 tokens avg
+  Constrained:  +5.76% CPU/tok |  533.5 ms/tok |  24.8 tokens avg
+  → CPU reduction: -493.9%
+
+======================================================================
+THE VERDICT
+======================================================================
+
+Factual Questions (The Critical Test):
+  Loose format:       +5.33% CPU per token
+  Constrained format: +17.10% CPU per token
+  Reduction:          -220.6%
+
+  ❌ Effect not observed (may need different constraints)
+(venv) jv@macmini ai-telemetry-test % pip install ollama
+Collecting ollama
+  Downloading ollama-0.6.1-py3-none-any.whl (14 kB)
+Collecting pydantic>=2.9
+  Downloading pydantic-2.12.4-py3-none-any.whl (463 kB)
+     |████████████████████████████████| 463 kB 1.4 MB/s 
+Collecting httpx>=0.27
+  Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+     |████████████████████████████████| 73 kB 3.3 MB/s 
+Requirement already satisfied: idna in ./venv/lib/python3.9/site-packages (from httpx>=0.27->ollama) (3.11)
+Requirement already satisfied: certifi in ./venv/lib/python3.9/site-packages (from httpx>=0.27->ollama) (2025.11.12)
+Collecting anyio
+  Downloading anyio-4.11.0-py3-none-any.whl (109 kB)
+     |████████████████████████████████| 109 kB 4.6 MB/s 
+Collecting httpcore==1.*
+  Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+     |████████████████████████████████| 78 kB 3.4 MB/s 
+Collecting h11>=0.16
+  Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+Collecting typing-inspection>=0.4.2
+  Downloading typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+Collecting annotated-types>=0.6.0
+  Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Requirement already satisfied: typing-extensions>=4.14.1 in ./venv/lib/python3.9/site-packages (from pydantic>=2.9->ollama) (4.15.0)
+Collecting pydantic-core==2.41.5
+  Downloading pydantic_core-2.41.5-cp39-cp39-macosx_10_12_x86_64.whl (2.1 MB)
+     |████████████████████████████████| 2.1 MB 2.3 MB/s 
+Collecting exceptiongroup>=1.0.2
+  Downloading exceptiongroup-1.3.1-py3-none-any.whl (16 kB)
+Collecting sniffio>=1.1
+  Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+Installing collected packages: sniffio, h11, exceptiongroup, typing-inspection, pydantic-core, httpcore, anyio, annotated-types, pydantic, httpx, ollama
+Successfully installed annotated-types-0.7.0 anyio-4.11.0 exceptiongroup-1.3.1 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 ollama-0.6.1 pydantic-2.12.4 pydantic-core-2.41.5 sniffio-1.3.1 typing-inspection-0.4.2
+WARNING: You are using pip version 21.2.4; however, version 25.3 is available.
+You should consider upgrading via the '/Users/jv/Desktop/ai-telemetry-test/venv/bin/python3 -m pip install --upgrade pip' command.
+(venv) jv@macmini ai-telemetry-test % nano test_ollama.py
+
+(venv) jv@macmini ai-telemetry-test % python test_ollama.py
+Testing Ollama connection...
+Response: 1, 2, 3, 4, 5.
+Time taken: 3.87 seconds
+Success! Ollama is working.
+(venv) jv@macmini ai-telemetry-test % nano phase5_alignment_tax.py
+(venv) jv@macmini ai-telemetry-test % python phase5_alignment_tax.py
+
+Warming up model...
+Warmup complete.
+
+Starting Phase 5: Alignment Tax Experiment
+Model: llama3.1:8b-instruct-q4_0
+Testing 8 prompt sets with 3 constraint levels each
+------------------------------------------------------------
+
+[1/8] Testing creative prompt set...
+  - free constraint... ✓ 468 tokens, 0.000 CPU%/token
+  - soft constraint... ✗ 32 tokens, 0.008 CPU%/token
+  - hard constraint... ✗ 25 tokens, 0.009 CPU%/token
+
+[2/8] Testing factual prompt set...
+  - free constraint... ✓ 438 tokens, 0.001 CPU%/token
+  - soft constraint... ✓ 32 tokens, 0.007 CPU%/token
+  - hard constraint... ✓ 30 tokens, 0.008 CPU%/token
+
+[3/8] Testing math prompt set...
+  - free constraint... ✓ 10 tokens, 0.020 CPU%/token
+  - soft constraint... ✓ 3 tokens, 0.056 CPU%/token
+  - hard constraint... ✓ 3 tokens, 0.056 CPU%/token
+
+[4/8] Testing factual prompt set...
+  - free constraint... ✓ 478 tokens, 0.000 CPU%/token
+  - soft constraint... ✗ 23 tokens, 0.010 CPU%/token
+  - hard constraint... ✓ 18 tokens, 0.012 CPU%/token
+
+[5/8] Testing factual prompt set...
+  - free constraint... ✓ 693 tokens, 0.000 CPU%/token
+  - soft constraint... ✗ 23 tokens, 0.009 CPU%/token
+  - hard constraint... ✓ 25 tokens, 0.008 CPU%/token
+
+[6/8] Testing creative prompt set...
+  - free constraint... ✓ 393 tokens, 0.001 CPU%/token
+  - soft constraint... ✓ 87 tokens, 0.003 CPU%/token
+  - hard constraint... ✓ 74 tokens, 0.003 CPU%/token
+
+[7/8] Testing creative prompt set...
+  - free constraint... ✓ 518 tokens, 0.000 CPU%/token
+  - soft constraint... ✓ 73 tokens, 0.003 CPU%/token
+  - hard constraint... ✓ 64 tokens, 0.004 CPU%/token
+
+[8/8] Testing math prompt set...
+  - free constraint... ✓ 76 tokens, 0.003 CPU%/token
+  - soft constraint... ✓ 3 tokens, 0.056 CPU%/token
+  - hard constraint... ✓ 3 tokens, 0.056 CPU%/token
+
+✓ Results saved to: phase5_alignment_tax_20251122_130649.json
+
+============================================================
+PHASE 5 PRELIMINARY RESULTS: ALIGNMENT TAX ANALYSIS
+============================================================
+
+Average CPU% per token by constraint level:
+----------------------------------------
+free    : 0.003 ± 0.007 CPU%/token
+soft    : 0.019 ± 0.023 CPU%/token
+hard    : 0.019 ± 0.023 CPU%/token
+
+🎯 ALIGNMENT TAX: +508.1%
+   (Hard constraints cost 508.1% more CPU than free generation)
+
+Constraint Adherence:
+----------------------------------------
+soft    : 5/8 passed (62%)
+hard    : 7/8 passed (88%)
+
+✓ Analysis complete!
+(venv) jv@macmini ai-telemetry-test % nano analyze_phase5.py
+(venv) jv@macmini ai-telemetry-test % python analyze_phase5.py
+DETAILED PHASE 5 ANALYSIS
+============================================================
+
+By Category Analysis:
+----------------------------------------
+
+CREATIVE:
+  free  : 0.000 CPU%/tok, 460 tokens, 201 ms/tok
+  soft  : 0.004 CPU%/tok,  64 tokens, 210 ms/tok
+  hard  : 0.005 CPU%/tok,  54 tokens, 253 ms/tok
+
+FACTUAL:
+  free  : 0.000 CPU%/tok, 536 tokens, 200 ms/tok
+  soft  : 0.009 CPU%/tok,  26 tokens, 232 ms/tok
+  hard  : 0.010 CPU%/tok,  24 tokens, 296 ms/tok
+
+MATH:
+  free  : 0.011 CPU%/tok,  43 tokens, 265 ms/tok
+  soft  : 0.056 CPU%/tok,   3 tokens, 819 ms/tok
+  hard  : 0.056 CPU%/tok,   3 tokens, 836 ms/tok
+
+============================================================
+OUTPUT LENGTH VS CPU CORRELATION:
+----------------------------------------
+free  :  384 avg tokens → 0.003 avg CPU%/token
+soft  :   34 avg tokens → 0.019 avg CPU%/token
+hard  :   30 avg tokens → 0.019 avg CPU%/token
+
+============================================================
+THE MATH ANOMALY:
+----------------------------------------
+free  :  10 tokens, 0.020 CPU%/tok - Output: '47 × 23 = 1071.'
+soft  :   3 tokens, 0.056 CPU%/tok - Output: '1071'
+hard  :   3 tokens, 0.056 CPU%/tok - Output: '1071'
+free  :  76 tokens, 0.003 CPU%/tok - Output: 'There are 86,400 seconds in a day.
+
+Here's the cal'
+soft  :   3 tokens, 0.056 CPU%/tok - Output: '86400'
+hard  :   3 tokens, 0.056 CPU%/tok - Output: '86400'
+
+Hypothesis: Math prompts are shortest, so overhead dominates per-token metric
+(venv) jv@macmini ai-telemetry-test % nano verify_cpu.py
+(venv) jv@macmini ai-telemetry-test % python verify_cpu.py
+
+Monitoring Ollama PID: 67351
+Warming up...
+Starting CPU monitor: top -l 0 -s 1 -pid 67351 > cpu_monitor.txt
+
+Running FREE inference (no constraints)...
+Time: 70.29s
+Output length: 1622 chars
+
+Running CONSTRAINED inference...
+Time: 24.72s
+Output length: 513 chars
+
+Stopping monitor...
+
+✓ Check cpu_monitor.txt for CPU usage
+Look for the CPU% column during each inference period
+(venv) jv@macmini ai-telemetry-test % # See the last 20 lines of CPU data
+tail -20 cpu_monitor.txt
+zsh: command not found: #
+PhysMem: 48G used (4676M wired, 0B compressor), 16G unused.
+VM: 50T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24818827/17G in, 9797886/1889M out.
+Disks: 2330478/41G read, 7328778/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.47 24  1   67     37M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 71564  1027 121     30      3297491+ 350     1632888+ 0       132906  0.0   496704     1865236   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 704 total, 2 running, 702 sleeping, 2578 threads 
+2025/11/22 13:14:20
+Load Avg: 7.37, 4.76, 4.34 
+CPU usage: 16.11% user, 2.19% sys, 81.69% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2204M shared.
+PhysMem: 48G used (4713M wired, 0B compressor), 16G unused.
+VM: 50T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24818917/17G in, 9797949/1889M out.
+Disks: 2330478/41G read, 7328800/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.47 24  1   67     37M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 71564  1027 121     30      3297522+ 350     1632908+ 0       132906  0.0   417859     1318421   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+(venv) jv@macmini ai-telemetry-test % nano monitor_runner.py
+(venv) jv@macmini ai-telemetry-test % python monitor_runner.py
+OLLAMA RUNNER PROCESS MONITORING
+==================================================
+
+WARMUP
+Monitoring runner PID: 68038
+Time: 4.97s
+CPU samples: 24
+Max CPU: 595.1%
+Mean CPU: 581.8%
+Median CPU: 593.5%
+
+FREE GENERATION
+Monitoring runner PID: 68038
+Time: 76.04s
+CPU samples: 368
+Max CPU: 594.9%
+Mean CPU: 587.6%
+Median CPU: 592.7%
+
+HARD CONSTRAINED
+Monitoring runner PID: 68038
+Time: 19.13s
+CPU samples: 85
+Max CPU: 597.9%
+Mean CPU: 587.9%
+Median CPU: 593.4%
+
+==================================================
+COMPARISON:
+Free:        Mean 587.6% CPU (n=368)
+Constrained: Mean 587.9% CPU (n=85)
+Alignment Tax: +0.1%
+(venv) jv@macmini ai-telemetry-test % nano llm_joulemeter.py
+(venv) jv@macmini ai-telemetry-test % sudo python3 llm_joulemeter.py
+Password:
+/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+🔌 Calibrating baseline power for 3s... (Hands off keyboard!)
+✅ Baseline set: 0.00 W
+
+🚀 Starting Phase 6: llama3.1:8b-instruct-q4_0 Energy Benchmark
+
+Testing: Control_Free...
+❌ No power samples captured. Check sudo permissions.
+Testing: Constraint_Format...
+❌ No power samples captured. Check sudo permissions.
+Testing: Constraint_Negative...
+❌ No power samples captured. Check sudo permissions.
+Testing: Constraint_Impossible...
+❌ No power samples captured. Check sudo permissions.
+Traceback (most recent call last):
+  File "/Users/jv/Desktop/ai-telemetry-test/llm_joulemeter.py", line 217, in <module>
+    run_experiment()
+  File "/Users/jv/Desktop/ai-telemetry-test/llm_joulemeter.py", line 201, in run_experiment
+    keys = results[0].keys()
+IndexError: list index out of range
+(venv) jv@macmini ai-telemetry-test % pip install requests
+Requirement already satisfied: requests in ./venv/lib/python3.9/site-packages (2.32.5)
+Requirement already satisfied: certifi>=2017.4.17 in ./venv/lib/python3.9/site-packages (from requests) (2025.11.12)
+Requirement already satisfied: urllib3<3,>=1.21.1 in ./venv/lib/python3.9/site-packages (from requests) (2.5.0)
+Requirement already satisfied: charset_normalizer<4,>=2 in ./venv/lib/python3.9/site-packages (from requests) (3.4.4)
+Requirement already satisfied: idna<4,>=2.5 in ./venv/lib/python3.9/site-packages (from requests) (3.11)
+WARNING: You are using pip version 21.2.4; however, version 25.3 is available.
+You should consider upgrading via the '/Users/jv/Desktop/ai-telemetry-test/venv/bin/python3 -m pip install --upgrade pip' command.
+(venv) jv@macmini ai-telemetry-test % sudo -E python3 llm_joulemeter.py
+Password:
+/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+🔌 Calibrating baseline power for 5s... (Don't touch anything!)
+⚠️ No baseline readings. Setting to 3.0W default for Intel Mac
+
+🚀 Starting Phase 6: llama3.1:8b-instruct-q4_0 Energy Benchmark
+
+Testing: Control_Free...
+   ❌ No power samples captured
+Testing: Constraint_Format...
+   ❌ No power samples captured
+Testing: Constraint_Negative...
+   ❌ No power samples captured
+Testing: Constraint_Impossible...
+   ❌ No power samples captured
+
+❌ No results collected. Check Ollama is running.
+(venv) jv@macmini ai-telemetry-test % nano debug_power.py
+(venv) jv@macmini ai-telemetry-test % sudo python3 debug_power.py
+Starting powermetrics debug...
+============================================================
+RAW OUTPUT:
+Machine model: Macmini8,1
+SMC version: Unknown
+EFI version: 2094.1.0
+OS version: 24G325
+Boot arguments: 
+Boot time: Sat Nov 15 23:15:38 2025
+
+
+
+*** Sampled system activity (Sat Nov 22 13:46:55 2025 -0500) (1002.94ms elapsed) ***
+
+
+**** Processor usage ****
+
+Intel energy model derived package power (CPUs+GT+SA): 4.81W
+
+LLC flushed residency: 56%
+
+System Average frequency as fraction of nominal: 71.10% (2275.18 Mhz)
+Package 0 C-state residency: 61.48% (C2: 61.48% C3: 0.00% C6: 0.00% C7: 0.00% C8: 0.00% C9: 0.00% C10: 0.00% )
+
+Performance Limited Due to:
+CPU LIMIT MAX_TURBO_LIMIT
+CPU LIMIT TURBO_ATTENUATION
+CPU/GPU Overlap: 5.66%
+Cores Active: 31.63%
+GPU Active: 7.69%
+Avg Num of Cores Active: 0.47
+
+Core 0 C-state residency: 81.45% (C3: 0.00% C6: 0.00% C7: 81.45% )
+
+CPU 0 duty cycles/s: active/idle [< 16 us: 247.27/118.65] [< 32 us: 89.74/1.00] [< 64 us: 162.52/123.64] [< 128 us: 104.69/151.55] [< 256 us: 111.67/76.77] [< 512 us: 91.73/103.70] [< 1024 us: 31.91/74.78] [< 2048 us: 2.99/72.79] [< 4096 us: 18.94/70.79] [< 8192 us: 0.00/62.82] [< 16384 us: 0.00/4.99] [< 32768 us: 0.00/0.00] 
+CPU Average frequency as fraction of nominal: 70.15% (2244.93 Mhz)
+
+CPU 1 duty cycles/s: active/idle [< 16 us: 646.10/41.88] [< 32 us: 1.99/33.90] [< 64 us: 1.99/66.80] [< 128 us: 1.00/107.68] [< 256 us: 1.00/67.80] [< 512 us: 0.00/65.81] [< 1024 us: 0.00/66.80] [< 2048 us: 0.00/45.87] [< 4096 us: 0.00/65.81] [< 8192 us: 0.00/63.81] [< 16384 us: 0.00/25.92] [< 32768 us: 0.00/0.00] 
+CPU Average frequency as fraction of nominal: 70.15% (2244.74 Mhz)
+
+Core 1 C-state residency: 81.45% (C3: 3.39% C6: 0.00% C7: 78.06% )
+
+CPU 2 duty cycles/s: active/idle [< 16 us: 517.48/84.75] [< 32 us: 78.77/1.00] [< 64 us: 93.72/149.56] [< 128 us: 62.82/182.46] [< 256 us: 88.74/134.60] [< 512 us: 25.92/85.75] [< 1024 us: 16.95/63.81] [< 2048 us: 2.99/59.82] [< 4096 us: 12.96/73.78] [< 8192 us: 1.99/62.82] [< 16384 us: 0.00/5.98] [< 32768 us: 0.00/0.00] 
+CPU Average frequency as fraction of nominal: 69.58% (2226.65 Mhz)
+
+CPU 3 duty cycles/s: active/idle [< 16 us: 469.62/33.90] [< 32 us: 1.99/26.92] [< 64 us: 1.99/47.86] [< 128 us: 1.99/57.83] [< 256 us: 0.00/57.83] [< 512 us: 1.00/45.87] [< 1024 us: 0.00/38.89] [< 2048 us: 0.00/29.91] [< 4096 us: 0.00/53.84] [< 8192 us: 0.00/41.88] [< 16384 us: 0.00/37.89] [< 32768 us: 0.00/3.99] 
+CPU Average frequency as fraction of nominal: 78.43% (2509.90 Mhz)
+
+Core 2 C-state residency: 89.74% (C3: 2.72% C6: 0.00% C7: 87.03% )
+
+CPU 4 duty cycles/s: active/idle [< 16 us: 609.21/88.74] [< 32 us: 81.76/3.99] [< 64 us: 74.78/93.72] [< 128 us: 49.85/196.42] [< 256 us: 45.87/130.62] [< 512 us: 16.95/93.72] [< 1024 us: 8.97/66.80] [< 2048 us: 1.99/66.80] [< 4096 us: 1.00/71.79] [< 8192 us: 0.00/58.83] [< 16384 us: 0.00/17.95] [< 32768 us: 0.00/0.00] 
+CPU Average frequency as fraction of nominal: 75.84% (2426.89 Mhz)
+
+CPU 5 duty cycles/s: active/idle [< 16 us: 496.54/44.87] [< 32 us: 1.99/41.88] [< 64 us: 0.00/52.84] [< 128 us: 0.00/56.83] [< 256 us: 0.00/56.83] [< 512 us: 1.99/50.85] [< 1024 us: 0.00/31.91] [< 2048 us: 0.00/26.92] [< 4096 us: 0.00/47.86] [< 8192 us: 0.00/48.86] [< 16384 us: 0.00/36.89] [< 32768 us: 0.00/3.99] 
+CPU Average frequency as fraction of nominal: 82.37% (2635.78 Mhz)
+
+Core 3 C-state residency: 89.93% (C3: 0.51% C6: 0.00% C7: 89.42% )
+
+CPU 6 duty cycles/s: active/idle [< 16 us: 415.78/55.84] [< 32 us: 44.87/5.98] [< 64 us: 53.84/53.84] [< 128 us: 29.91/110.67] [< 256 us: 28.92/97.71] [< 512 us: 16.95/76.77] [< 1024 us: 8.97/39.88] [< 2048 us: 1.99/38.89] [< 4096 us: 7.98/49.85] [< 8192 us: 0.00/50.85] [< 16384 us: 0.00/28.92] [< 32768 us: 0.00/0.00] 
+CPU Average frequency as fraction of nominal: 73.07% (2338.27 Mhz)
+
+CPU 7 duty cycles/s: active/idle [< 16 us: 135.60/9.97] [< 32 us: 1.99/2.99] [< 64 us: 0.00/10.97] [< 128 us: 0.00/17.95] [< 256 us: 1.99/17.95] [< 512 us: 0.00/11.96] [< 1024 us: 0.00/10.97] [< 2048 us: 0.00/4.99] [< 4096 us: 0.00/6.98] [< 8192 us: 0.00/9.97] [< 16384 us: 0.00/17.95] [< 32768 us: 0.00/8.97] 
+CPU Average frequency as fraction of nominal: 90.46% (2894.64 Mhz)
+
+Core 4 C-state residency: 94.76% (C3: 0.00% C6: 0.00% C7: 94.76% )
+
+CPU 8 duty cycles/s: active/idle [< 16 us: 249.27/39.88] [< 32 us: 29.91/1.00] [< 64 us: 33.90/29.91] [< 128 us: 10.97/42.87] [< 256 us: 16.95/44.87] [< 512 us: 10.97/39.88] [< 1024 us: 2.99/20.94] [< 2048 us: 1.00/19.94] [< 4096 us: 1.99/37.89] [< 8192 us: 0.00/37.89] [< 16384 us: 1.00/37.89] [< 32768 us: 0.00/5.98] 
+CPU Average frequency as fraction of nominal: 70.07% (2242.32 Mhz)
+
+CPU 9 duty cycles/s: active/idle [< 16 us: 222.35/30.91] [< 32 us: 0.00/22.93] [< 64 us: 0.00/23.93] [< 128 us: 0.00/38.89] [< 256 us: 0.00/21.94] [< 512 us: 1.00/12.96] [< 1024 us: 0.00/8.97] [< 2048 us: 0.00/1.99] [< 4096 us: 0.00/7.98] [< 8192 us: 0.00/10.97] [< 16384 us: 0.00/21.94] [< 32768 us: 0.00/11.96] 
+CPU Average frequency as fraction of nominal: 71.69% (2294.15 Mhz)
+
+Core 5 C-state residency: 98.87% (C3: 0.91% C6: 0.00% C7: 97.96% )
+
+CPU 10 duty cycles/s: active/idle [< 16 us: 156.54/15.95] [< 32 us: 7.98/0.00] [< 64 us: 9.97/11.96] [< 128 us: 6.98/25.92] [< 256 us: 4.99/16.95] [< 512 us: 1.00/16.95] [< 1024 us: 1.00/8.97] [< 2048 us: 1.00/9.97] [< 4096 us: 0.00/19.94] [< 8192 us: 0.00/16.95] [< 16384 us: 0.00/31.91] [< 32768 us: 0.00/7.98] 
+CPU Average frequency as fraction of nominal: 75.14% (2404.47 Mhz)
+
+CPU 11 duty cycles/s: active/idle [< 16 us: 18.94/1.00] [< 32 us: 0.00/0.00] [< 64 us: 1.00/0.00] [< 128 us: 1.00/1.99] [< 256 us: 0.00/1.00] [< 512 us: 0.00/2.99] [< 1024 us: 0.00/1.00] [< 2048 us: 0.00/1.00] [< 4096 us: 0.00/2.99] [< 8192 us: 0.00/1.99] [< 16384 us: 0.00/0.00] [< 32768 us: 0.00/1.99] 
+CPU Average frequency as fraction of nominal: 73.02% (2336.69 Mhz)
+
+
+*** Sampled system activity (Sat Nov 22 13:46:56 2025 -0500) (1002.70ms elapsed) ***
+
+
+**** Processor usage ****
+
+Intel energy model derived package power (CPUs+GT+SA): 4.72W
+
+LLC flushed residency: 54.7%
+
+System Average frequency as fraction of nominal: 69.68% (2229.81 Mhz)
+Package 0 C-state residency: 61.25% (C2: 61.25% C3: 0.00% C6: 0.00% C7: 0.00% C8: 0.00% C9: 0.00% C10: 0.00% )
+
+Performance Limited Due to:
+CPU LIMIT MAX_TURBO_LIMIT
+CPU LIMIT TURBO_ATTENUATION
+CPU/GPU Overlap: 6.33%
+Cores Active: 31.20%
+GPU Active: 9.16%
+Avg Num of Cores Active: 0.47
+
+Core 0 C-state residency: 78.49% (C3: 1.18% C6: 0.00% C7: 77.32% )
+
+CPU 0 duty cycles/s: active/idle [< 16 us: 351.05/92.75] [< 32 us: 97.74/10.97] [< 64 us: 148.60/169.54] [< 128 us: 110.70/162.56] [< 256 us: 120.67/118.68] [< 512 us: 93.75/96.74] [< 1024 us: 31.91/112.70] [< 2048 us: 4.99/86.77] [< 4096 us: 19.95/75.80] [< 8192 us: 1.00/46.87] [< 16384 us: 0.00/6.98] [< 32768 us: 0.00/0.00] 
+CPU Average frequency as fraction of nominal: 70.31% (2250.03 Mhz)
+
+CPU 1 duty cycles/s: active/idle [< 16 us: 762.94/55.85] [< 32 us: 6.98/20.94] [< 64 us: 0.00/77.79] [< 128 us: 0.00/114.69] [< 256 us: 0.00/95.74] [< 512 us: 0.00/92.75] [< 1024 us: 0.00/83.77] [< 2048 us: 0.00/73.80] [< 4096 us: 0.00/77.79] [< 8192 us: 0.00/54.85] [< 16384 us: 0.00/21.94] [< 32768 us: 0.00/0.00] 
+CPU Average frequency as fraction of nominal: 69.32% (2218.21 Mhz)
+
+Core 1 C-state residency: 83.89% (C3: 2.01% C6: 0.00% C7: 81.88% )
+
+CPU 2 duty cycles/s: active/idle [< 16 us: 599.38/103.72] [< 32 us: 102.72/3.99] [< 64 us: 114.69/148.60] [< 128 us: 71.81/206.44] [< 256 us: 95.74/162.56] [< 512 us: 43.88/111.70] [< 1024 us: 10.97/99.73] [< 2048 us: 4.99/88.76] [< 4096 us: 12.97/69.81] [< 8192 us: 0.00/49.87] [< 16384 us: 0.00/11.97] [< 32768 us: 0.00/0.00] 
+CPU Average frequency as fraction of nominal: 69.17% (2213.57 Mhz)
+
+CPU 3 duty cycles/s: active/idle [< 16 us: 587.42/52.86] [< 32 us: 1.00/40.89] [< 64 us: 1.00/49.87] [< 128 us: 0.00/96.74] [< 256 us: 0.00/66.82] [< 512 us: 0.00/64.83] [< 1024 us: 0.00/41.89] [< 2048 us: 0.00/47.87] [< 4096 us: 0.00/52.86] [< 8192 us: 0.00/37.90] [< 16384 us: 0.00/32.91] [< 32768 us: 0.00/3.99] 
+CPU Average frequency as fraction of nominal: 73.74% (2359.59 Mhz)
+
+Core 2 C-state residency: 86.81% (C3: 3.54% C6: 0.00% C7: 83.27% )
+
+CPU 4 duty cycles/s: active/idle [< 16 us: 615.34/89.76] [< 32 us: 83.77/15.96] [< 64 us: 94.74/83.77] [< 128 us: 56.85/168.55] [< 256 us: 50.86/161.56] [< 512 us: 22.94/133.64] [< 1024 us: 12.97/76.79] [< 2048 us: 2.99/91.75] [< 4096 us: 6.98/55.85] [< 8192 us: 0.00/53.85] [< 16384 us: 0.00/16.95] [< 32768 us: 0.00/0.00] 
+CPU Average frequency as fraction of nominal: 70.26% (2248.22 Mhz)
+
+CPU 5 duty cycles/s: active/idle [< 16 us: 623.32/76.79] [< 32 us: 7.98/48.87] [< 64 us: 1.99/61.83] [< 128 us: 0.00/92.75] [< 256 us: 0.00/62.83] [< 512 us: 0.00/60.84] [< 1024 us: 0.00/41.89] [< 2048 us: 1.00/52.86] [< 4096 us: 0.00/56.85] [< 8192 us: 0.00/39.89] [< 16384 us: 0.00/38.90] [< 32768 us: 0.00/0.00] 
+CPU Average frequency as fraction of nominal: 71.87% (2299.72 Mhz)
+
+Core 3 C-state residency: 89.29% (C3: 0.25% C6: 0.00% C7: 89.04% )
+
+CPU 6 duty cycles/s: active/idle [< 16 us: 463.75/65.82] [< 32 us: 42.88/5.98] [< 64 us: 68.81/63.83] [< 128 us: 41.89/141.62] [< 256 us: 33.91/88.76] [< 512 us: 21.94/74.80] [< 1024 us: 6.98/59.84] [< 2048 us: 1.00/58.84] [< 4096 us: 8.98/57.84] [< 8192 us: 1.00/41.89] [< 16384 us: 0.00/30.92] [< 32768 us: 0.00/0.00] 
+CPU Average frequency as fraction of nominal: 70.01% (2240.26 Mhz)
+
+CPU 7 duty cycles/s: active/idle [< 16 us: 197.47/11.97] [< 32 us: 3.99/9.97] [< 64 us: 1.00/15.96] [< 128 us: 0.00/63.83] [< 256 us: 0.00/18.95] [< 512 us: 0.00/8.98] [< 1024 us: 0.00/15.96] [< 2048 us: 0.00/5.98] [< 4096 us: 0.00/12.97] [< 8192 us: 0.00/6.98] [< 16384 us: 0.00/12.97] [< 32768 us: 0.00/8.98] 
+CPU Average frequency as fraction of nominal: 73.27% (2344.78 Mhz)
+
+Core 4 C-state residency: 95.83% (C3: 0.01% C6: 0.00% C7: 95.82% )
+
+CPU 8 duty cycles/s: active/idle [< 16 us: 266.28/16.95] [< 32 us: 28.92/1.00] [< 64 us: 26.93/20.94] [< 128 us: 9.97/56.85] [< 256 us: 22.94/52.86] [< 512 us: 5.98/38.90] [< 1024 us: 2.99/27.92] [< 2048 us: 1.00/32.91] [< 4096 us: 1.99/41.89] [< 8192 us: 0.00/30.92] [< 16384 us: 0.00/43.88] [< 32768 us: 0.00/2.99] 
+CPU Average frequency as fraction of nominal: 66.94% (2141.99 Mhz)
+
+CPU 9 duty cycles/s: active/idle [< 16 us: 232.37/16.95] [< 32 us: 1.00/11.97] [< 64 us: 0.00/18.95] [< 128 us: 1.00/66.82] [< 256 us: 0.00/19.95] [< 512 us: 0.00/12.97] [< 1024 us: 0.00/13.96] [< 2048 us: 0.00/10.97] [< 4096 us: 0.00/17.95] [< 8192 us: 0.00/9.97] [< 16384 us: 0.00/16.95] [< 32768 us: 0.00/10.97] 
+CPU Average frequency as fraction of nominal: 73.61% (2355.48 Mhz)
+
+Core 5 C-state residency: 96.59% (C3: 0.00% C6: 0.00% C7: 96.59% )
+
+CPU 10 duty cycles/s: active/idle [< 16 us: 152.59/16.95] [< 32 us: 15.96/0.00] [< 64 us: 24.93/11.97] [< 128 us: 11.97/34.91] [< 256 us: 8.98/14.96] [< 512 us: 5.98/21.94] [< 1024 us: 5.98/20.94] [< 2048 us: 0.00/17.95] [< 4096 us: 3.99/21.94] [< 8192 us: 1.00/24.93] [< 16384 us: 0.00/29.92] [< 32768 us: 0.00/12.97] 
+CPU Average frequency as fraction of nominal: 66.93% (2141.77 Mhz)
+
+CPU 11 duty cycles/s: active/idle [< 16 us: 12.97/0.00] [< 32 us: 0.00/0.00] [< 64 us: 0.00/1.00] [< 128 us: 0.00/0.00] [< 256 us: 0.00/1.00] [< 512 us: 0.00/0.00] [< 1024 us: 0.00/1.99] [< 2048 us: 0.00/1.00] [< 4096 us: 0.00/1.00] [< 8192 us: 0.00/0.00] [< 16384 us: 0.00/1.00] [< 32768 us: 0.00/0.00] 
+CPU Average frequency as fraction of nominal: 81.89% (2620.42 Mhz)
+
+
+*** Sampled system activity (Sat Nov 22 13:46:57 2025 -0500) (1003.51ms elapsed) ***
+
+
+**** Processor usage ****
+
+Intel energy model derived package power (CPUs+GT+SA): 4.37W
+
+LLC flushed residency: 63.4%
+
+System Average frequency as fraction of nominal: 71.02% (2272.65 Mhz)
+Package 0 C-state residency: 66.56% (C2: 66.56% C3: 0.00% C6: 0.00% C7: 0.00% C8: 0.00% C9: 0.00% C10: 0.00% )
+
+Performance Limited Due to:
+CPU LIMIT TURBO_ATTENUATION
+CPU/GPU Overlap: 5.92%
+Cores Active: 25.24%
+GPU Active: 8.72%
+Avg Num of Cores Active: 0.37
+
+Core 0 C-state residency: 82.05% (C3: 0.03% C6: 0.00% C7: 82.01% )
+
+CPU 0 duty cycles/s: active/idle [< 16 us: 261.08/62.78] [< 32 us: 82.71/1.00] [< 64 us: 115.59/97.66] [< 128 us: 97.66/146.49] [< 256 us: 114.60/81.71] [< 512 us: 103.64/86.70] [< 1024 us: 18.93/102.64] [< 2048 us: 1.99/87.69] [< 4096 us: 14.95/90.68] [< 8192 us: 0.00/47.83] [< 16384 us: 0.00/5.98] [< 32768 us: 0.00/0.00] 
+CPU Average frequency as fraction of nominal: 70.31% (2249.88 Mhz)
+
+CPU 1 duty cycles/s: active/idle [< 16 us: 563.02/36.87] [< 32 us: 1.99/8.97] [< 64 us: 0.00/35.87] [< 128 us: 0.00/78.72] [< 256 us: 0.00/59.79] [< 512 us: 0.00/60.79] [< 1024 us: 0.00/62.78] [< 2048 us: 0.00/54.81] [< 4096 us: 0.00/80.72] [< 8192 us: 0.00/65.77] [< 16384 us: 0.00/19.93] [< 32768 us: 0.00/0.00] 
+CPU Average frequency as fraction of nominal: 68.54% (2193.21 Mhz)
+
+Core 1 C-state residency: 84.37% (C3: 0.00% C6: 0.00% C7: 84.36% )
+
+CPU 2 duty cycles/s: active/idle [< 16 us: 443.44/67.76] [< 32 us: 73.74/1.00] [< 64 us: 97.66/103.64] [< 128 us: 62.78/158.44] [< 256 us: 88.69/112.60] [< 512 us: 45.84/87.69] [< 1024 us: 9.97/86.70] [< 2048 us: 2.99/78.72] [< 4096 us: 19.93/87.69] [< 8192 us: 0.00/55.80] [< 16384 us: 0.00/3.99] [< 32768 us: 0.00/0.00] 
+CPU Average frequency as fraction of nominal: 71.45% (2286.55 Mhz)
+
+CPU 3 duty cycles/s: active/idle [< 16 us: 388.64/39.86] [< 32 us: 1.99/12.95] [< 64 us: 1.00/30.89] [< 128 us: 1.00/36.87] [< 256 us: 0.00/31.89] [< 512 us: 0.00/31.89] [< 1024 us: 0.00/43.85] [< 2048 us: 0.00/22.92] [< 4096 us: 0.00/53.81] [< 8192 us: 0.00/46.84] [< 16384 us: 0.00/38.86] [< 32768 us: 0.00/1.99] 
+CPU Average frequency as fraction of nominal: 73.32% (2346.37 Mhz)
+
+Core 2 C-state residency: 92.49% (C3: 0.96% C6: 0.00% C7: 91.53% )
+
+CPU 4 duty cycles/s: active/idle [< 16 us: 562.03/53.81] [< 32 us: 76.73/1.99] [< 64 us: 88.69/84.70] [< 128 us: 34.88/148.48] [< 256 us: 18.93/117.59] [< 512 us: 12.95/96.66] [< 1024 us: 4.98/85.70] [< 2048 us: 0.00/67.76] [< 4096 us: 1.99/69.76] [< 8192 us: 0.00/54.81] [< 16384 us: 0.00/19.93] [< 32768 us: 0.00/0.00] 
+CPU Average frequency as fraction of nominal: 72.71% (2326.74 Mhz)
+
+CPU 5 duty cycles/s: active/idle [< 16 us: 426.50/47.83] [< 32 us: 1.99/17.94] [< 64 us: 1.00/44.84] [< 128 us: 0.00/38.86] [< 256 us: 0.00/38.86] [< 512 us: 0.00/35.87] [< 1024 us: 0.00/43.85] [< 2048 us: 0.00/24.91] [< 4096 us: 0.00/51.82] [< 8192 us: 0.00/42.85] [< 16384 us: 0.00/37.87] [< 32768 us: 0.00/3.99] 
+CPU Average frequency as fraction of nominal: 75.09% (2402.85 Mhz)
+
+Core 3 C-state residency: 94.74% (C3: 0.01% C6: 0.00% C7: 94.73% )
+
+CPU 6 duty cycles/s: active/idle [< 16 us: 465.37/46.84] [< 32 us: 36.87/1.00] [< 64 us: 62.78/43.85] [< 128 us: 18.93/128.55] [< 256 us: 19.93/85.70] [< 512 us: 7.97/55.80] [< 1024 us: 1.00/56.80] [< 2048 us: 0.00/44.84] [< 4096 us: 2.99/70.75] [< 8192 us: 0.00/55.80] [< 16384 us: 0.00/24.91] [< 32768 us: 0.00/1.00] 
+CPU Average frequency as fraction of nominal: 73.84% (2362.88 Mhz)
+
+CPU 7 duty cycles/s: active/idle [< 16 us: 95.66/4.98] [< 32 us: 3.99/3.99] [< 64 us: 1.99/7.97] [< 128 us: 0.00/10.96] [< 256 us: 0.00/7.97] [< 512 us: 0.00/2.99] [< 1024 us: 0.00/4.98] [< 2048 us: 0.00/1.00] [< 4096 us: 0.00/12.95] [< 8192 us: 0.00/3.99] [< 16384 us: 0.00/11.96] [< 32768 us: 0.00/21.92] 
+CPU Average frequency as fraction of nominal: 76.93% (2461.87 Mhz)
+
+Core 4 C-state residency: 97.34% (C3: 0.00% C6: 0.00% C7: 97.34% )
+
+CPU 8 duty cycles/s: active/idle [< 16 us: 214.25/16.94] [< 32 us: 15.94/0.00] [< 64 us: 17.94/10.96] [< 128 us: 7.97/34.88] [< 256 us: 9.97/31.89] [< 512 us: 1.99/20.93] [< 1024 us: 1.99/23.92] [< 2048 us: 0.00/17.94] [< 4096 us: 2.99/32.88] [< 8192 us: 0.00/34.88] [< 16384 us: 0.00/42.85] [< 32768 us: 0.00/3.99] 
+CPU Average frequency as fraction of nominal: 73.30% (2345.45 Mhz)
+
+CPU 9 duty cycles/s: active/idle [< 16 us: 112.60/6.98] [< 32 us: 3.99/1.99] [< 64 us: 0.00/6.98] [< 128 us: 1.00/14.95] [< 256 us: 0.00/9.97] [< 512 us: 0.00/1.99] [< 1024 us: 0.00/6.98] [< 2048 us: 0.00/3.99] [< 4096 us: 0.00/13.95] [< 8192 us: 0.00/7.97] [< 16384 us: 0.00/15.94] [< 32768 us: 0.00/21.92] 
+CPU Average frequency as fraction of nominal: 70.94% (2270.22 Mhz)
+
+Core 5 C-state residency: 97.29% (C3: 0.00% C6: 0.00% C7: 97.29% )
+
+CPU 10 duty cycles/s: active/idle [< 16 us: 154.46/6.98] [< 32 us: 8.97/0.00] [< 64 us: 21.92/14.95] [< 128 us: 11.96/26.91] [< 256 us: 46.84/37.87] [< 512 us: 10.96/14.95] [< 1024 us: 0.00/14.95] [< 2048 us: 0.00/16.94] [< 4096 us: 0.00/49.83] [< 8192 us: 0.00/26.91] [< 16384 us: 0.00/29.90] [< 32768 us: 0.00/12.95] 
+CPU Average frequency as fraction of nominal: 64.19% (2054.23 Mhz)
+
+CPU 11 duty cycles/s: active/idle [< 16 us: 6.98/0.00] [< 32 us: 0.00/0.00] [< 64 us: 1.00/0.00] [< 128 us: 0.00/0.00] [< 256 us: 0.00/0.00] [< 512 us: 0.00/0.00] [< 1024 us: 0.00/1.00] [< 2048 us: 0.00/1.00] [< 4096 us: 0.00/0.00] [< 8192 us: 0.00/0.00] [< 16384 us: 0.00/1.00] [< 32768 us: 0.00/1.00] 
+CPU Average frequency as fraction of nominal: 68.69% (2198.07 Mhz)
+
+============================================================
+
+✅ Found 3 power readings: ['4.81', '4.72', '4.37']
+(venv) jv@macmini ai-telemetry-test % nano llm_joulemeter_simple.py
+(venv) jv@macmini ai-telemetry-test % sudo python3 llm_joulemeter_simple.py
+/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+============================================================
+PHASE 6: ENERGY COST OF ALIGNMENT
+============================================================
+📊 Measuring baseline power for 3s...
+✅ Baseline power: 4.42W
+
+♨️ Warming up model...
+
+🔬 Testing: warmup
+   ⚡ Power: 36.17W avg, 56.51W max (8 samples)
+   📝 10 tokens in 2.5s
+   ⏱️  0.250 sec/token
+
+🔬 Testing: Control_Free
+   ⚡ Power: 48.91W avg, 55.26W max (58 samples)
+   📝 126 tokens in 27.7s
+   ⏱️  0.220 sec/token
+
+🔬 Testing: Constraint_Format
+   ⚡ Power: 48.95W avg, 54.58W max (44 samples)
+   📝 97 tokens in 20.3s
+   ⏱️  0.210 sec/token
+
+🔬 Testing: Constraint_Negative
+   ⚡ Power: 51.94W avg, 56.89W max (67 samples)
+   📝 160 tokens in 32.3s
+   ⏱️  0.202 sec/token
+
+🔬 Testing: Constraint_Impossible
+   ⚡ Power: 52.27W avg, 58.01W max (57 samples)
+   📝 132 tokens in 27.2s
+   ⏱️  0.206 sec/token
+
+============================================================
+RESULTS: ALIGNMENT TAX IN JOULES
+============================================================
+
+Control_Free:
+  Tokens: 126
+  Power: 44.49W net (48.91W raw)
+  Energy: 1231.93J total
+  💎 Cost: 9.7772 J/token
+
+Constraint_Format:
+  Tokens: 97
+  Power: 44.53W net (48.95W raw)
+  Energy: 906.19J total
+  💎 Cost: 9.3422 J/token
+
+Constraint_Negative:
+  Tokens: 160
+  Power: 47.52W net (51.94W raw)
+  Energy: 1533.47J total
+  💎 Cost: 9.5842 J/token
+
+Constraint_Impossible:
+  Tokens: 132
+  Power: 47.85W net (52.27W raw)
+  Energy: 1302.48J total
+  💎 Cost: 9.8673 J/token
+
+----------------------------------------
+ALIGNMENT TAX (vs Free):
+  Constraint_Format   : 0.96x energy cost
+  Constraint_Negative : 0.98x energy cost
+  Constraint_Impossible: 1.01x energy cost
+
+✅ Results saved to phase6_energy_results.json
+(venv) jv@macmini ai-telemetry-test % nano phase7_tps_benchmark.py
+(venv) jv@macmini ai-telemetry-test % python phase7_tps_benchmark.py
+/Users/jv/Desktop/ai-telemetry-test/venv/bin/python: can't open file '/Users/jv/Desktop/ai-telemetry-test/phase7_tps_benchmark.py': [Errno 2] No such file or directory
+(venv) jv@macmini ai-telemetry-test % python phase7_tps_benchmark.py
+/Users/jv/Desktop/ai-telemetry-test/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+============================================================
+PHASE 7: TOKENS PER SECOND BENCHMARK
+Measuring the Alignment Tax through efficiency
+============================================================
+
+♨️ Warming up model...
+
+📊 Level 0: Free
+----------------------------------------
+  [1/5] ✓ 5.17 TPS (201 tokens)
+  [2/5] ✓ 5.23 TPS (201 tokens)
+  [3/5] ✓ 5.25 TPS (201 tokens)
+  [4/5] ✓ 5.16 TPS (201 tokens)
+  [5/5] ✓ 5.18 TPS (201 tokens)
+
+  Average: 5.20 ± 0.04 TPS
+
+📊 Level 1: Format_Only
+----------------------------------------
+  [1/5] ✓ 4.90 TPS (98 tokens)
+  [2/5] ✓ 4.11 TPS (28 tokens)
+  [3/5] ✓ 4.43 TPS (34 tokens)
+  [4/5] ✓ 3.73 TPS (20 tokens)
+  [5/5] ✓ 4.72 TPS (65 tokens)
+
+  Average: 4.38 ± 0.47 TPS
+
+📊 Level 2: Single_Negative
+----------------------------------------
+  [1/5] ✓ 5.03 TPS (178 tokens)
+  [2/5] ✓ 5.05 TPS (201 tokens)
+  [3/5] ✓ 5.05 TPS (201 tokens)
+  [4/5] ✓ 5.05 TPS (201 tokens)
+  [5/5] ✓ 5.00 TPS (173 tokens)
+
+  Average: 5.04 ± 0.02 TPS
+
+📊 Level 3: Multiple_Negative
+----------------------------------------
+  [1/5] ✓ 4.86 TPS (137 tokens)
+  [2/5] ✓ 4.92 TPS (201 tokens)
+  [3/5] ✓ 4.92 TPS (201 tokens)
+  [4/5] ✓ 4.92 TPS (201 tokens)
+  [5/5] ✓ 4.93 TPS (201 tokens)
+
+  Average: 4.91 ± 0.03 TPS
+
+📊 Level 4: Nearly_Impossible
+----------------------------------------
+  [1/5] ✓ 4.92 TPS (106 tokens)
+  [2/5] ✓ 4.87 TPS (149 tokens)
+  [3/5] ✓ 4.82 TPS (102 tokens)
+  [4/5] ✓ 4.52 TPS (55 tokens)
+  [5/5] ✓ 4.55 TPS (61 tokens)
+
+  Average: 4.74 ± 0.19 TPS
+
+============================================================
+ANALYSIS: THE ALIGNMENT TAX CURVE
+============================================================
+
+Difficulty vs Performance:
+----------------------------------------
+Level 0 (Free                ): ██████████ 5.20 TPS (Tax: +0.0%)
+Level 1 (Format_Only         ): ████████ 4.38 TPS (Tax: +15.8%)
+Level 2 (Single_Negative     ): ██████████ 5.04 TPS (Tax: +3.1%)
+Level 3 (Multiple_Negative   ): █████████ 4.91 TPS (Tax: +5.5%)
+Level 4 (Nearly_Impossible   ): █████████ 4.74 TPS (Tax: +8.9%)
+
+🎯 TOTAL ALIGNMENT TAX: 8.9%
+   (Performance drops from 5.20 to 4.74 TPS)
+
+✅ Results saved to: phase7_tps_results_20251122_140004.json
+
+📈 Checking for exponential decay pattern...
+   ○ Linear or irregular pattern. Constraints may have hit complexity ceiling.
+(venv) jv@macmini ai-telemetry-test % 

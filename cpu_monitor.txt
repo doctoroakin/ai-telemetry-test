@@ -1,0 +1,1170 @@
+Processes: 702 total, 2 running, 700 sleeping, 2580 threads 
+2025/11/22 13:12:40
+Load Avg: 2.53, 3.47, 3.90 
+CPU usage: 3.69% user, 7.27% sys, 89.3% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 402294 total, 12G resident, 614M private, 2202M shared.
+PhysMem: 48G used (4803M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5224M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24813058/17G in, 9792616/1888M out.
+Disks: 2330375/41G read, 7327676/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD  SYSMACH CSW     PAGEINS IDLEW  POWER INSTRS CYCLES JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.14 24  1   67     44M 0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 63103  1027 121     30      3288893 350     1628779 0       132893 0.0   0      0      180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 702 total, 2 running, 700 sleeping, 2593 threads 
+2025/11/22 13:12:41
+Load Avg: 2.53, 3.47, 3.90 
+CPU usage: 1.54% user, 2.42% sys, 96.3% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 614M private, 2202M shared.
+PhysMem: 48G used (4795M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5224M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24813121/17G in, 9792676/1888M out.
+Disks: 2330376/41G read, 7327677/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD  SYSMACH CSW     PAGEINS IDLEW  POWER INSTRS CYCLES JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.14 24  1   67     44M 0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 63103  1027 121     30      3288893 350     1628779 0       132893 0.0   0      0      180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 702 total, 3 running, 699 sleeping, 2595 threads 
+2025/11/22 13:12:42
+Load Avg: 2.53, 3.47, 3.90 
+CPU usage: 45.49% user, 1.23% sys, 53.27% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 614M private, 2202M shared.
+PhysMem: 48G used (4769M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5224M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24813195/17G in, 9792752/1888M out.
+Disks: 2330376/41G read, 7327677/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  13.2 01:14.28 24  1   67     40M- 0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70591+ 1027 121     30      3290703+ 350     1629188+ 0       132902+ 13.6  1544661709 599783945 180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 702 total, 3 running, 699 sleeping, 2568 threads 
+2025/11/22 13:12:43
+Load Avg: 2.97, 3.55, 3.92 
+CPU usage: 50.45% user, 1.43% sys, 48.10% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 614M private, 2202M shared.
+PhysMem: 48G used (4769M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5224M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24813259/17G in, 9792809/1888M out.
+Disks: 2330376/41G read, 7327677/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.28 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70591  1027 121     30      3290763+ 350     1629225+ 0       132902  0.0   657773     2502776   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 702 total, 3 running, 699 sleeping, 2563 threads 
+2025/11/22 13:12:44
+Load Avg: 2.97, 3.55, 3.92 
+CPU usage: 50.53% user, 1.29% sys, 48.17% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 614M private, 2202M shared.
+PhysMem: 48G used (4740M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5224M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24813316/17G in, 9792865/1888M out.
+Disks: 2330376/41G read, 7327677/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.28 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70591  1027 121     30      3290831+ 350     1629272+ 0       132902  0.0   716649     2720196   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 702 total, 4 running, 698 sleeping, 2556 threads 
+2025/11/22 13:12:46
+Load Avg: 2.97, 3.55, 3.92 
+CPU usage: 50.30% user, 1.52% sys, 48.16% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 614M private, 2202M shared.
+PhysMem: 48G used (4731M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5224M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24813381/17G in, 9792918/1888M out.
+Disks: 2330376/41G read, 7327677/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.28 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70591  1027 121     30      3290899+ 350     1629314+ 0       132902  0.0   698348     2576427   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 702 total, 3 running, 699 sleeping, 2550 threads 
+2025/11/22 13:12:47
+Load Avg: 2.97, 3.55, 3.92 
+CPU usage: 50.79% user, 1.59% sys, 47.60% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 614M private, 2202M shared.
+PhysMem: 48G used (4715M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5224M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24813444/17G in, 9792972/1888M out.
+Disks: 2330376/41G read, 7327677/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.28 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70591  1027 121     30      3290967+ 350     1629359+ 0       132902  0.0   724782     2762884   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 702 total, 3 running, 699 sleeping, 2551 threads 
+2025/11/22 13:12:48
+Load Avg: 2.97, 3.55, 3.92 
+CPU usage: 50.95% user, 1.90% sys, 47.14% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 614M private, 2202M shared.
+PhysMem: 48G used (4693M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5224M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24813500/17G in, 9793025/1888M out.
+Disks: 2330376/41G read, 7327677/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.28 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70591  1027 121     30      3291023+ 350     1629398+ 0       132902  0.0   621641     2281282   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 702 total, 3 running, 699 sleeping, 2552 threads 
+2025/11/22 13:12:49
+Load Avg: 3.21, 3.59, 3.93 
+CPU usage: 50.22% user, 1.21% sys, 48.55% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 614M private, 2202M shared.
+PhysMem: 48G used (4671M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5224M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24813552/17G in, 9793069/1888M out.
+Disks: 2330376/41G read, 7327677/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.28 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70592+ 1027 121     30      3291091+ 350     1629442+ 0       132902  0.0   718136     2772655   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 702 total, 3 running, 699 sleeping, 2552 threads 
+2025/11/22 13:12:50
+Load Avg: 3.21, 3.59, 3.93 
+CPU usage: 50.45% user, 1.43% sys, 48.10% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 614M private, 2202M shared.
+PhysMem: 48G used (4671M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5224M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24813613/17G in, 9793129/1888M out.
+Disks: 2330376/41G read, 7327677/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.28 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70592  1027 121     30      3291150+ 350     1629482+ 0       132902  0.0   677828     2508766   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 702 total, 4 running, 698 sleeping, 2554 threads 
+2025/11/22 13:12:51
+Load Avg: 3.21, 3.59, 3.93 
+CPU usage: 50.30% user, 1.43% sys, 48.25% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4695M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24813706/17G in, 9793233/1888M out.
+Disks: 2330376/41G read, 7327678/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.28 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70592  1027 121     30      3291212+ 350     1629523+ 0       132902  0.0   691370     2543720   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 702 total, 3 running, 699 sleeping, 2549 threads 
+2025/11/22 13:12:52
+Load Avg: 3.21, 3.59, 3.93 
+CPU usage: 50.33% user, 2.74% sys, 46.91% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4694M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24813767/17G in, 9793293/1888M out.
+Disks: 2330376/41G read, 7327678/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.28 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70592  1027 121     30      3291284+ 350     1629571+ 0       132902  0.0   811563     2989010   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 702 total, 4 running, 698 sleeping, 2539 threads 
+2025/11/22 13:12:53
+Load Avg: 3.52, 3.64, 3.95 
+CPU usage: 50.15% user, 1.28% sys, 48.56% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4694M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24813834/17G in, 9793350/1888M out.
+Disks: 2330376/41G read, 7327678/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.29 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70594+ 1027 121     30      3291352+ 350     1629622+ 0       132902  0.0   786289     2943842   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 702 total, 3 running, 699 sleeping, 2535 threads 
+2025/11/22 13:12:55
+Load Avg: 3.52, 3.64, 3.95 
+CPU usage: 50.30% user, 1.29% sys, 48.39% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4701M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24813891/17G in, 9793402/1888M out.
+Disks: 2330378/41G read, 7327682/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.29 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70594  1027 121     30      3291419+ 350     1629670+ 0       132902  0.0   762372     2788458   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 702 total, 3 running, 699 sleeping, 2525 threads 
+2025/11/22 13:12:56
+Load Avg: 3.52, 3.64, 3.95 
+CPU usage: 52.72% user, 1.99% sys, 45.28% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4701M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24813946/17G in, 9793452/1888M out.
+Disks: 2330378/41G read, 7327906/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.29 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70594  1027 121     30      3291475+ 350     1629713+ 0       132902  0.0   646651     2510576   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 702 total, 3 running, 699 sleeping, 2523 threads 
+2025/11/22 13:12:57
+Load Avg: 3.52, 3.64, 3.95 
+CPU usage: 50.64% user, 1.21% sys, 48.13% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4693M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24814004/17G in, 9793506/1888M out.
+Disks: 2330449/41G read, 7327910/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.29 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70594  1027 121     30      3291539+ 350     1629758+ 0       132902  0.0   722199     2638637   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 702 total, 3 running, 699 sleeping, 2529 threads 
+2025/11/22 13:12:58
+Load Avg: 3.52, 3.64, 3.95 
+CPU usage: 50.30% user, 1.29% sys, 48.40% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4687M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24814061/17G in, 9793561/1888M out.
+Disks: 2330449/41G read, 7327910/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.29 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70596+ 1027 121     30      3291614+ 350     1629811+ 0       132902  0.0   802967     2919037   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 702 total, 4 running, 698 sleeping, 2532 threads 
+2025/11/22 13:12:59
+Load Avg: 3.72, 3.68, 3.96 
+CPU usage: 50.15% user, 1.13% sys, 48.71% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4687M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24814119/17G in, 9793616/1888M out.
+Disks: 2330449/41G read, 7327910/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.29 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70598+ 1027 121     30      3291676+ 350     1629853+ 0       132902  0.0   687846     2548626   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 702 total, 3 running, 699 sleeping, 2537 threads 
+2025/11/22 13:13:00
+Load Avg: 3.72, 3.68, 3.96 
+CPU usage: 50.15% user, 1.21% sys, 48.62% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4678M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24814183/17G in, 9793676/1888M out.
+Disks: 2330449/41G read, 7327910/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.29 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70598  1027 121     30      3291734+ 350     1629890+ 0       132902  0.0   662228     2528281   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 702 total, 3 running, 699 sleeping, 2547 threads 
+2025/11/22 13:13:01
+Load Avg: 3.72, 3.68, 3.96 
+CPU usage: 53.57% user, 1.29% sys, 45.12% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4672M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24814240/17G in, 9793720/1888M out.
+Disks: 2330460/41G read, 7327939/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.29 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70600+ 1027 121     30      3291785+ 350     1629922+ 0       132902  0.0   566339     2160933   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 711 total, 4 running, 707 sleeping, 2616 threads 
+2025/11/22 13:13:02
+Load Avg: 3.72, 3.68, 3.96 
+CPU usage: 55.18% user, 3.4% sys, 41.76% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 538 total, 7724K resident, 5744K private, 2202M shared.
+PhysMem: 48G used (4672M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24814304/17G in, 9793776/1888M out.
+Disks: 2330460/41G read, 7327950/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.29 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70600  1027 121     30      3291832+ 350     1629952+ 0       132902  0.0   544327     2025058   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 711 total, 3 running, 708 sleeping, 2613 threads 
+2025/11/22 13:13:04
+Load Avg: 3.90, 3.72, 3.97 
+CPU usage: 50.42% user, 2.64% sys, 46.92% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 5744K private, 2202M shared.
+PhysMem: 48G used (4673M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24814386/17G in, 9793840/1888M out.
+Disks: 2330460/41G read, 7327954/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.29 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70600  1027 121     30      3291905+ 350     1630000+ 0       132902  0.0   805828     3010135   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 711 total, 3 running, 708 sleeping, 2595 threads 
+2025/11/22 13:13:05
+Load Avg: 3.90, 3.72, 3.97 
+CPU usage: 50.78% user, 1.11% sys, 48.10% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 5744K private, 2202M shared.
+PhysMem: 48G used (4672M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24814448/17G in, 9793897/1888M out.
+Disks: 2330460/41G read, 7327957/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.29 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70601+ 1027 121     30      3291974+ 350     1630048+ 0       132902  0.0   764736     2811168   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 711 total, 3 running, 708 sleeping, 2610 threads 
+2025/11/22 13:13:06
+Load Avg: 3.90, 3.72, 3.97 
+CPU usage: 50.53% user, 1.44% sys, 48.2% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 5744K private, 2202M shared.
+PhysMem: 48G used (4672M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24814527/17G in, 9793977/1888M out.
+Disks: 2330460/41G read, 7327958/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.29 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70601  1027 121     30      3292040+ 350     1630093+ 0       132902  0.0   743505     2692594   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 711 total, 3 running, 708 sleeping, 2605 threads 
+2025/11/22 13:13:07
+Load Avg: 3.90, 3.72, 3.97 
+CPU usage: 50.15% user, 1.21% sys, 48.63% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 5744K private, 2202M shared.
+PhysMem: 48G used (4672M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24814603/17G in, 9794056/1888M out.
+Disks: 2330460/41G read, 7327958/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.29 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70601  1027 121     30      3292096+ 350     1630131+ 0       132902  0.0   666197     2456527   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 711 total, 3 running, 708 sleeping, 2568 threads 
+2025/11/22 13:13:08
+Load Avg: 3.90, 3.72, 3.97 
+CPU usage: 50.34% user, 1.22% sys, 48.43% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 5744K private, 2202M shared.
+PhysMem: 48G used (4672M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24814667/17G in, 9794118/1888M out.
+Disks: 2330460/41G read, 7327958/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.30 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70601  1027 121     30      3292146+ 350     1630166+ 0       132902  0.0   599673     2250456   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 711 total, 3 running, 708 sleeping, 2575 threads 
+2025/11/22 13:13:09
+Load Avg: 4.07, 3.76, 3.98 
+CPU usage: 50.11% user, 1.6% sys, 48.81% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 5744K private, 2202M shared.
+PhysMem: 48G used (4661M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24814733/17G in, 9794188/1888M out.
+Disks: 2330460/41G read, 7327964/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.30 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70601  1027 121     30      3292205+ 350     1630206+ 0       132902  0.0   685847     2445958   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 711 total, 3 running, 708 sleeping, 2565 threads 
+2025/11/22 13:13:10
+Load Avg: 4.07, 3.76, 3.98 
+CPU usage: 50.15% user, 1.14% sys, 48.70% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 5744K private, 2202M shared.
+PhysMem: 48G used (4661M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24814789/17G in, 9794244/1888M out.
+Disks: 2330460/41G read, 7327964/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.30 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70601  1027 121     30      3292275+ 350     1630254+ 0       132902  0.0   760589     2698475   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 711 total, 3 running, 708 sleeping, 2573 threads 
+2025/11/22 13:13:11
+Load Avg: 4.07, 3.76, 3.98 
+CPU usage: 50.60% user, 1.44% sys, 47.95% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 5744K private, 2202M shared.
+PhysMem: 48G used (4597M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24814847/17G in, 9794303/1888M out.
+Disks: 2330460/41G read, 7327964/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.30 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70601  1027 121     30      3292324+ 350     1630284+ 0       132902  0.0   539019     1993590   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 711 total, 3 running, 708 sleeping, 2622 threads 
+2025/11/22 13:13:12
+Load Avg: 4.07, 3.76, 3.98 
+CPU usage: 53.31% user, 2.97% sys, 43.70% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 5744K private, 2202M shared.
+PhysMem: 48G used (4723M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24814905/17G in, 9794360/1888M out.
+Disks: 2330460/41G read, 7327977/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.30 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70601  1027 121     30      3292388+ 350     1630326+ 0       132902  0.0   710777     2708817   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 711 total, 3 running, 708 sleeping, 2628 threads 
+2025/11/22 13:13:14
+Load Avg: 4.07, 3.76, 3.98 
+CPU usage: 51.17% user, 1.51% sys, 47.31% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4723M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24814970/17G in, 9794417/1888M out.
+Disks: 2330460/41G read, 7327977/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.30 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70601  1027 121     30      3292444+ 350     1630363+ 0       132902  0.0   606359     2112497   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 711 total, 3 running, 708 sleeping, 2616 threads 
+2025/11/22 13:13:15
+Load Avg: 4.54, 3.86, 4.02 
+CPU usage: 51.77% user, 3.24% sys, 44.97% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4723M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24815025/17G in, 9794470/1888M out.
+Disks: 2330460/41G read, 7327977/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.30 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70601  1027 121     30      3292525+ 350     1630417+ 0       132902  0.0   883120     3159913   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 711 total, 3 running, 708 sleeping, 2612 threads 
+2025/11/22 13:13:16
+Load Avg: 4.54, 3.86, 4.02 
+CPU usage: 51.33% user, 1.52% sys, 47.14% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4723M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24815082/17G in, 9794522/1888M out.
+Disks: 2330460/41G read, 7327977/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.30 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70601  1027 121     30      3292578+ 350     1630451+ 0       132902  0.0   575905     2113262   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 711 total, 3 running, 708 sleeping, 2616 threads 
+2025/11/22 13:13:17
+Load Avg: 4.54, 3.86, 4.02 
+CPU usage: 51.47% user, 1.66% sys, 46.85% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4723M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24815147/17G in, 9794575/1888M out.
+Disks: 2330460/41G read, 7327977/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.30 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70601  1027 121     30      3292652+ 350     1630501+ 0       132902  0.0   767255     2920285   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 710 total, 3 running, 707 sleeping, 2599 threads 
+2025/11/22 13:13:18
+Load Avg: 4.54, 3.86, 4.02 
+CPU usage: 51.74% user, 1.81% sys, 46.43% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4722M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24815199/17G in, 9794621/1888M out.
+Disks: 2330460/41G read, 7327978/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.30 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70601  1027 121     30      3292705+ 350     1630535+ 0       132902  0.0   586776     2235565   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 710 total, 3 running, 707 sleeping, 2594 threads 
+2025/11/22 13:13:19
+Load Avg: 4.66, 3.90, 4.03 
+CPU usage: 51.63% user, 1.59% sys, 46.77% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4721M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24815253/17G in, 9794668/1888M out.
+Disks: 2330460/41G read, 7327978/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.30 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70602+ 1027 121     30      3292767+ 350     1630574+ 0       132902  0.0   690042     2551956   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 710 total, 3 running, 707 sleeping, 2590 threads 
+2025/11/22 13:13:20
+Load Avg: 4.66, 3.90, 4.03 
+CPU usage: 51.48% user, 1.67% sys, 46.84% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4741M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24815310/17G in, 9794721/1888M out.
+Disks: 2330460/41G read, 7327979/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.30 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70604+ 1027 121     30      3292815+ 350     1630604+ 0       132902  0.0   550053     2111834   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 710 total, 3 running, 707 sleeping, 2587 threads 
+2025/11/22 13:13:21
+Load Avg: 4.66, 3.90, 4.03 
+CPU usage: 51.21% user, 1.67% sys, 47.10% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4748M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24815366/17G in, 9794775/1888M out.
+Disks: 2330460/41G read, 7327979/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.30 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70604  1027 121     30      3292874+ 350     1630641+ 0       132902  0.0   667598     2591207   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 710 total, 3 running, 707 sleeping, 2577 threads 
+2025/11/22 13:13:23
+Load Avg: 4.66, 3.90, 4.03 
+CPU usage: 52.1% user, 1.44% sys, 46.54% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4748M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24815458/17G in, 9794861/1888M out.
+Disks: 2330464/41G read, 7327980/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.31 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70604  1027 121     30      3292923+ 350     1630674+ 0       132902  0.0   567360     2175108   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 710 total, 3 running, 707 sleeping, 2566 threads 
+2025/11/22 13:13:24
+Load Avg: 4.85, 3.95, 4.05 
+CPU usage: 50.11% user, 1.7% sys, 48.81% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4748M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24815511/17G in, 9794908/1888M out.
+Disks: 2330464/41G read, 7327980/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.31 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70604  1027 121     30      3292982+ 350     1630710+ 0       132902  0.0   653077     2336144   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 710 total, 4 running, 706 sleeping, 2559 threads 
+2025/11/22 13:13:25
+Load Avg: 4.85, 3.95, 4.05 
+CPU usage: 50.98% user, 1.36% sys, 47.64% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4748M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24815576/17G in, 9794959/1888M out.
+Disks: 2330464/41G read, 7328270/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.31 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70604  1027 121     30      3293036+ 350     1630748+ 0       132902  0.0   608182     2271708   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 710 total, 4 running, 706 sleeping, 2587 threads 
+2025/11/22 13:13:26
+Load Avg: 4.85, 3.95, 4.05 
+CPU usage: 51.89% user, 4.8% sys, 44.2% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 153 total, 3408K resident, 0B private, 2202M shared.
+PhysMem: 48G used (4748M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24815613/17G in, 9794987/1888M out.
+Disks: 2330464/41G read, 7328270/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.31 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70604  1027 121     30      3293111+ 350     1630800+ 0       132902  0.0   842557     3234556   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 710 total, 3 running, 707 sleeping, 2599 threads 
+2025/11/22 13:13:27
+Load Avg: 4.85, 3.95, 4.05 
+CPU usage: 51.47% user, 1.89% sys, 46.63% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4748M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24815650/17G in, 9795014/1888M out.
+Disks: 2330464/41G read, 7328270/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.31 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70604  1027 121     30      3293161+ 350     1630833+ 0       132902  0.0   572126     2087683   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 710 total, 3 running, 707 sleeping, 2598 threads 
+2025/11/22 13:13:28
+Load Avg: 4.85, 3.95, 4.05 
+CPU usage: 50.42% user, 1.6% sys, 48.51% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4748M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24815705/17G in, 9795068/1888M out.
+Disks: 2330464/41G read, 7328270/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.31 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70604  1027 121     30      3293229+ 350     1630879+ 0       132902  0.0   738358     2646043   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 710 total, 4 running, 706 sleeping, 2599 threads 
+2025/11/22 13:13:29
+Load Avg: 5.18, 4.03, 4.08 
+CPU usage: 50.56% user, 1.50% sys, 47.92% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4748M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24815782/17G in, 9795148/1888M out.
+Disks: 2330464/41G read, 7328273/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.31 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70604  1027 121     30      3293280+ 350     1630915+ 0       132902  0.0   591797     2206244   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 710 total, 4 running, 706 sleeping, 2576 threads 
+2025/11/22 13:13:30
+Load Avg: 5.18, 4.03, 4.08 
+CPU usage: 51.48% user, 1.52% sys, 46.99% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4748M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24815853/17G in, 9795223/1888M out.
+Disks: 2330464/41G read, 7328273/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.31 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70604  1027 121     30      3293352+ 350     1630963+ 0       132902  0.0   770039     2983434   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 710 total, 3 running, 707 sleeping, 2571 threads 
+2025/11/22 13:13:32
+Load Avg: 5.18, 4.03, 4.08 
+CPU usage: 50.87% user, 1.52% sys, 47.59% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4747M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24815937/17G in, 9795305/1888M out.
+Disks: 2330464/41G read, 7328273/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.31 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70604  1027 121     30      3293410+ 350     1631007+ 0       132902  0.0   661984     2401422   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 710 total, 3 running, 707 sleeping, 2564 threads 
+2025/11/22 13:13:33
+Load Avg: 5.18, 4.03, 4.08 
+CPU usage: 50.99% user, 1.37% sys, 47.63% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4675M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24816004/17G in, 9795368/1888M out.
+Disks: 2330464/41G read, 7328316/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.31 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70604  1027 121     30      3293467+ 350     1631042+ 0       132902  0.0   641683     2391724   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 710 total, 3 running, 707 sleeping, 2565 threads 
+2025/11/22 13:13:34
+Load Avg: 5.32, 4.08, 4.09 
+CPU usage: 51.6% user, 1.29% sys, 47.63% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4675M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24816064/17G in, 9795421/1888M out.
+Disks: 2330464/41G read, 7328324/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.31 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70604  1027 121     30      3293519+ 350     1631076+ 0       132902  0.0   581811     2272118   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 710 total, 3 running, 707 sleeping, 2567 threads 
+2025/11/22 13:13:35
+Load Avg: 5.32, 4.08, 4.09 
+CPU usage: 50.91% user, 1.82% sys, 47.26% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4678M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24816120/17G in, 9795474/1888M out.
+Disks: 2330464/41G read, 7328324/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.31 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70604  1027 121     30      3293588+ 350     1631123+ 0       132902  0.0   743903     2752164   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 710 total, 4 running, 706 sleeping, 2564 threads 
+2025/11/22 13:13:36
+Load Avg: 5.32, 4.08, 4.09 
+CPU usage: 51.39% user, 1.50% sys, 47.9% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4678M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24816187/17G in, 9795534/1888M out.
+Disks: 2330464/41G read, 7328324/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.31 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70604  1027 121     30      3293637+ 350     1631153+ 0       132902  0.0   556527     1978447   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 710 total, 4 running, 706 sleeping, 2571 threads 
+2025/11/22 13:13:37
+Load Avg: 5.32, 4.08, 4.09 
+CPU usage: 52.86% user, 2.83% sys, 44.29% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4678M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24816247/17G in, 9795594/1888M out.
+Disks: 2330464/41G read, 7328324/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.31 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70604  1027 121     30      3293705+ 350     1631201+ 0       132902  0.0   812854     3065209   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 710 total, 4 running, 706 sleeping, 2567 threads 
+2025/11/22 13:13:38
+Load Avg: 5.32, 4.08, 4.09 
+CPU usage: 60.1% user, 1.65% sys, 38.32% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4696M wired, 0B compressor), 16G unused.
+VM: 48T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24816303/17G in, 9795646/1888M out.
+Disks: 2330464/41G read, 7328324/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.32 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70604  1027 121     30      3293748+ 350     1631230+ 0       132902  0.0   481960     1771255   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 701 total, 3 running, 698 sleeping, 2550 threads 
+2025/11/22 13:13:40
+Load Avg: 5.70, 4.18, 4.13 
+CPU usage: 55.86% user, 2.74% sys, 41.38% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4711M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24816450/17G in, 9795774/1888M out.
+Disks: 2330464/41G read, 7328333/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.32 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70604  1027 121     30      3293804+ 350     1631271+ 0       132902  0.0   650444     2317336   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 701 total, 4 running, 697 sleeping, 2548 threads 
+2025/11/22 13:13:41
+Load Avg: 5.70, 4.18, 4.13 
+CPU usage: 54.92% user, 2.65% sys, 42.42% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4677M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24816514/17G in, 9795831/1888M out.
+Disks: 2330464/41G read, 7328333/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.32 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70604  1027 121     30      3293857+ 350     1631307+ 0       132902  0.0   609500     2258001   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 701 total, 4 running, 697 sleeping, 2545 threads 
+2025/11/22 13:13:42
+Load Avg: 5.70, 4.18, 4.13 
+CPU usage: 54.2% user, 2.42% sys, 43.55% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4644M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24816578/17G in, 9795887/1888M out.
+Disks: 2330464/41G read, 7328333/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.32 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70606+ 1027 121     30      3293912+ 350     1631348+ 0       132902  0.0   638394     2396007   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 701 total, 4 running, 697 sleeping, 2547 threads 
+2025/11/22 13:13:43
+Load Avg: 5.70, 4.18, 4.13 
+CPU usage: 53.72% user, 2.18% sys, 44.9% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4644M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24816644/17G in, 9795950/1888M out.
+Disks: 2330464/41G read, 7328333/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.32 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70606  1027 121     30      3293959+ 350     1631378+ 0       132902  0.0   541310     2046607   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 701 total, 4 running, 697 sleeping, 2543 threads 
+2025/11/22 13:13:44
+Load Avg: 5.96, 4.26, 4.16 
+CPU usage: 55.0% user, 2.21% sys, 42.78% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4643M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24816709/17G in, 9796007/1888M out.
+Disks: 2330464/41G read, 7328333/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.32 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70606  1027 121     30      3294014+ 350     1631415+ 0       132902  0.0   608256     2196701   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 701 total, 4 running, 697 sleeping, 2529 threads 
+2025/11/22 13:13:45
+Load Avg: 5.96, 4.26, 4.16 
+CPU usage: 53.88% user, 2.11% sys, 44.0% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4641M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24816796/17G in, 9796087/1888M out.
+Disks: 2330464/41G read, 7328333/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.32 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70606  1027 121     30      3294063+ 350     1631448+ 0       132902  0.0   557748     2118149   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 701 total, 4 running, 697 sleeping, 2522 threads 
+2025/11/22 13:13:46
+Load Avg: 5.96, 4.26, 4.16 
+CPU usage: 54.30% user, 2.28% sys, 43.40% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4641M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24816863/17G in, 9796150/1889M out.
+Disks: 2330464/41G read, 7328333/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.32 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70606  1027 121     30      3294117+ 350     1631487+ 0       132902  0.0   614357     2459017   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 701 total, 4 running, 697 sleeping, 2526 threads 
+2025/11/22 13:13:48
+Load Avg: 5.96, 4.26, 4.16 
+CPU usage: 53.95% user, 2.3% sys, 44.0% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4641M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24816936/17G in, 9796207/1889M out.
+Disks: 2330464/41G read, 7328333/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.32 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70606  1027 121     30      3294169+ 350     1631520+ 0       132902  0.0   578440     2253713   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 701 total, 3 running, 698 sleeping, 2531 threads 
+2025/11/22 13:13:49
+Load Avg: 5.96, 4.26, 4.16 
+CPU usage: 54.94% user, 4.0% sys, 41.5% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4641M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24817002/17G in, 9796270/1889M out.
+Disks: 2330464/41G read, 7328333/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.32 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70608+ 1027 121     30      3294238+ 350     1631569+ 0       132902  0.0   784149     2812779   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 701 total, 4 running, 697 sleeping, 2538 threads 
+2025/11/22 13:13:50
+Load Avg: 6.12, 4.32, 4.18 
+CPU usage: 53.94% user, 2.21% sys, 43.84% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4644M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24817066/17G in, 9796330/1889M out.
+Disks: 2330464/41G read, 7328334/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.32 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70608  1027 121     30      3294287+ 350     1631601+ 0       132902  0.0   559247     2053120   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 701 total, 4 running, 697 sleeping, 2536 threads 
+2025/11/22 13:13:51
+Load Avg: 6.12, 4.32, 4.18 
+CPU usage: 53.60% user, 2.27% sys, 44.12% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4705M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24817119/17G in, 9796367/1889M out.
+Disks: 2330464/41G read, 7328335/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.32 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70608  1027 121     30      3294343+ 350     1631642+ 0       132902  0.0   642643     2310334   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 701 total, 2 running, 699 sleeping, 2536 threads 
+2025/11/22 13:13:52
+Load Avg: 6.12, 4.32, 4.18 
+CPU usage: 35.34% user, 2.34% sys, 62.31% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4739M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24817163/17G in, 9796401/1889M out.
+Disks: 2330472/41G read, 7328430/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.32 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70613+ 1027 121     30      3294395+ 350     1631674+ 0       132902  0.0   670246     2163229   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 701 total, 3 running, 698 sleeping, 2541 threads 
+2025/11/22 13:13:53
+Load Avg: 6.12, 4.32, 4.18 
+CPU usage: 5.41% user, 1.96% sys, 92.62% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4748M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24817209/17G in, 9796435/1889M out.
+Disks: 2330472/41G read, 7328430/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.32 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70613  1027 121     30      3294395  350     1631674  0       132902  0.0   0          0         180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 701 total, 2 running, 699 sleeping, 2537 threads 
+2025/11/22 13:13:54
+Load Avg: 5.95, 4.31, 4.18 
+CPU usage: 5.11% user, 1.96% sys, 92.91% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4743M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24817276/17G in, 9796493/1889M out.
+Disks: 2330472/41G read, 7328430/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.32 24  1   67     40M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 70613  1027 121     30      3294395  350     1631674  0       132902  0.0   0          0         180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 701 total, 3 running, 698 sleeping, 2532 threads 
+2025/11/22 13:13:55
+Load Avg: 5.95, 4.31, 4.18 
+CPU usage: 28.74% user, 2.84% sys, 68.40% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4743M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24817345/17G in, 9796559/1889M out.
+Disks: 2330473/41G read, 7328574/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  12.5 01:14.46 24  1   67     37M- 0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 71564+ 1027 121     30      3296318+ 350     1632077+ 0       132906+ 12.7  1504202155 562818017 180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 701 total, 4 running, 697 sleeping, 2534 threads 
+2025/11/22 13:13:56
+Load Avg: 5.95, 4.31, 4.18 
+CPU usage: 53.85% user, 2.34% sys, 43.79% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4742M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24817429/17G in, 9796642/1889M out.
+Disks: 2330473/41G read, 7328574/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.46 24  1   67     37M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 71564  1027 121     30      3296341+ 350     1632091+ 0       132906  0.0   254601     929335    180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 701 total, 4 running, 697 sleeping, 2531 threads 
+2025/11/22 13:13:57
+Load Avg: 5.95, 4.31, 4.18 
+CPU usage: 54.49% user, 2.49% sys, 43.1% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4742M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24817512/17G in, 9796719/1889M out.
+Disks: 2330473/41G read, 7328574/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.46 24  1   67     37M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 71564  1027 121     30      3296406+ 350     1632132+ 0       132906  0.0   670675     2612155   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 701 total, 3 running, 698 sleeping, 2537 threads 
+2025/11/22 13:13:59
+Load Avg: 5.95, 4.31, 4.18 
+CPU usage: 54.0% user, 2.42% sys, 43.57% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2202M shared.
+PhysMem: 48G used (4736M wired, 0B compressor), 16G unused.
+VM: 47T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24817607/17G in, 9796798/1889M out.
+Disks: 2330473/41G read, 7328574/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.46 24  1   67     37M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 71564  1027 121     30      3296455+ 350     1632168+ 0       132906  0.0   553954     2077260   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 702 total, 3 running, 699 sleeping, 2562 threads 
+2025/11/22 13:14:00
+Load Avg: 6.20, 4.39, 4.20 
+CPU usage: 55.71% user, 5.4% sys, 39.23% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 23232 total, 40M resident, 0B private, 2203M shared.
+PhysMem: 48G used (4717M wired, 0B compressor), 16G unused.
+VM: 49T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24817676/17G in, 9796865/1889M out.
+Disks: 2330473/41G read, 7328574/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.46 24  1   67     37M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 71564  1027 121     30      3296551+ 350     1632240+ 0       132906  0.0   1021672    3727382   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 702 total, 3 running, 699 sleeping, 2563 threads 
+2025/11/22 13:14:01
+Load Avg: 6.20, 4.39, 4.20 
+CPU usage: 53.92% user, 2.28% sys, 43.79% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2203M shared.
+PhysMem: 48G used (4717M wired, 0B compressor), 16G unused.
+VM: 49T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24817742/17G in, 9796916/1889M out.
+Disks: 2330473/41G read, 7328574/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.46 24  1   67     37M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 71564  1027 121     30      3296603+ 350     1632274+ 0       132906  0.0   582599     2254260   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 703 total, 3 running, 700 sleeping, 2583 threads 
+2025/11/22 13:14:02
+Load Avg: 6.20, 4.39, 4.20 
+CPU usage: 56.72% user, 3.71% sys, 39.55% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 11540 total, 17M resident, 0B private, 2204M shared.
+PhysMem: 48G used (4712M wired, 0B compressor), 16G unused.
+VM: 50T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24817831/17G in, 9796994/1889M out.
+Disks: 2330476/41G read, 7328681/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.46 24  1   67     37M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 71564  1027 121     30      3296668+ 350     1632322+ 0       132906  0.0   764859     3020667   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 704 total, 3 running, 701 sleeping, 2597 threads 
+2025/11/22 13:14:03
+Load Avg: 6.20, 4.39, 4.20 
+CPU usage: 55.14% user, 2.85% sys, 41.99% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 64 total, 948K resident, 0B private, 2204M shared.
+PhysMem: 48G used (4714M wired, 0B compressor), 16G unused.
+VM: 50T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24817902/17G in, 9797058/1889M out.
+Disks: 2330476/41G read, 7328693/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.46 24  1   67     37M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 71564  1027 121     30      3296718+ 350     1632356+ 0       132906  0.0   580674     2220823   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 704 total, 3 running, 701 sleeping, 2589 threads 
+2025/11/22 13:14:04
+Load Avg: 6.26, 4.43, 4.22 
+CPU usage: 54.33% user, 2.58% sys, 43.8% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2204M shared.
+PhysMem: 48G used (4714M wired, 0B compressor), 16G unused.
+VM: 50T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24817990/17G in, 9797138/1889M out.
+Disks: 2330476/41G read, 7328696/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.46 24  1   67     37M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 71564  1027 121     30      3296770+ 350     1632396+ 0       132906  0.0   624656     2490412   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 704 total, 4 running, 700 sleeping, 2581 threads 
+2025/11/22 13:14:05
+Load Avg: 6.26, 4.43, 4.22 
+CPU usage: 53.71% user, 2.42% sys, 43.86% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2204M shared.
+PhysMem: 48G used (4714M wired, 0B compressor), 16G unused.
+VM: 50T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24818057/17G in, 9797196/1889M out.
+Disks: 2330476/41G read, 7328696/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.46 24  1   67     37M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 71564  1027 121     30      3296834+ 350     1632440+ 0       132906  0.0   712429     2648405   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 704 total, 3 running, 701 sleeping, 2584 threads 
+2025/11/22 13:14:06
+Load Avg: 6.26, 4.43, 4.22 
+CPU usage: 53.99% user, 2.86% sys, 43.14% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2204M shared.
+PhysMem: 48G used (4737M wired, 0B compressor), 16G unused.
+VM: 50T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24818121/17G in, 9797260/1889M out.
+Disks: 2330476/41G read, 7328696/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.46 24  1   67     37M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 71564  1027 121     30      3296883+ 350     1632472+ 0       132906  0.0   557842     2169329   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 704 total, 5 running, 699 sleeping, 2577 threads 
+2025/11/22 13:14:08
+Load Avg: 6.26, 4.43, 4.22 
+CPU usage: 54.12% user, 2.82% sys, 43.5% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2204M shared.
+PhysMem: 48G used (4738M wired, 0B compressor), 16G unused.
+VM: 50T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24818205/17G in, 9797330/1889M out.
+Disks: 2330476/41G read, 7328697/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.46 24  1   67     37M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 71564  1027 121     30      3296937+ 350     1632510+ 0       132906  0.0   614796     2502181   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 704 total, 4 running, 700 sleeping, 2573 threads 
+2025/11/22 13:14:09
+Load Avg: 6.26, 4.43, 4.22 
+CPU usage: 56.43% user, 3.23% sys, 40.33% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2204M shared.
+PhysMem: 48G used (4739M wired, 0B compressor), 16G unused.
+VM: 50T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24818279/17G in, 9797402/1889M out.
+Disks: 2330476/41G read, 7328697/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.46 24  1   67     37M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 71564  1027 121     30      3296994+ 350     1632546+ 0       132906  0.0   653204     2524217   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 704 total, 5 running, 699 sleeping, 2587 threads 
+2025/11/22 13:14:10
+Load Avg: 6.32, 4.48, 4.24 
+CPU usage: 56.88% user, 3.21% sys, 39.89% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2204M shared.
+PhysMem: 48G used (4740M wired, 0B compressor), 16G unused.
+VM: 50T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24818371/17G in, 9797485/1889M out.
+Disks: 2330478/41G read, 7328762/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.47 24  1   67     37M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 71564  1027 121     30      3297048+ 350     1632586+ 0       132906  0.0   619391     2270492   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 704 total, 4 running, 700 sleeping, 2590 threads 
+2025/11/22 13:14:11
+Load Avg: 6.32, 4.48, 4.24 
+CPU usage: 56.14% user, 4.81% sys, 39.3% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2204M shared.
+PhysMem: 48G used (4725M wired, 0B compressor), 16G unused.
+VM: 50T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24818437/17G in, 9797545/1889M out.
+Disks: 2330478/41G read, 7328762/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.47 24  1   67     37M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 71564  1027 121     30      3297113+ 350     1632634+ 0       132906  0.0   740303     2895350   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 704 total, 4 running, 700 sleeping, 2581 threads 
+2025/11/22 13:14:12
+Load Avg: 6.32, 4.48, 4.24 
+CPU usage: 56.59% user, 3.5% sys, 40.35% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2204M shared.
+PhysMem: 48G used (4688M wired, 0B compressor), 16G unused.
+VM: 50T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24818504/17G in, 9797607/1889M out.
+Disks: 2330478/41G read, 7328763/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.47 24  1   67     37M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 71564  1027 121     30      3297178+ 350     1632678+ 0       132906  0.0   715658     2633964   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 704 total, 5 running, 699 sleeping, 2577 threads 
+2025/11/22 13:14:13
+Load Avg: 6.32, 4.48, 4.24 
+CPU usage: 55.3% user, 3.0% sys, 41.96% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2204M shared.
+PhysMem: 48G used (4688M wired, 0B compressor), 16G unused.
+VM: 50T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24818559/17G in, 9797650/1889M out.
+Disks: 2330478/41G read, 7328763/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.47 24  1   67     37M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 71564  1027 121     30      3297232+ 350     1632715+ 0       132906  0.0   603667     2378542   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 704 total, 3 running, 701 sleeping, 2549 threads 
+2025/11/22 13:14:15
+Load Avg: 6.62, 4.57, 4.27 
+CPU usage: 55.21% user, 2.71% sys, 42.6% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2204M shared.
+PhysMem: 48G used (4688M wired, 0B compressor), 16G unused.
+VM: 50T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24818619/17G in, 9797693/1889M out.
+Disks: 2330478/41G read, 7328763/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.47 24  1   67     37M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 71564  1027 121     30      3297279+ 350     1632745+ 0       132906  0.0   544068     1972784   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 704 total, 4 running, 700 sleeping, 2562 threads 
+2025/11/22 13:14:16
+Load Avg: 6.62, 4.57, 4.27 
+CPU usage: 55.23% user, 2.86% sys, 41.89% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2204M shared.
+PhysMem: 48G used (4664M wired, 0B compressor), 16G unused.
+VM: 50T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24818667/17G in, 9797735/1889M out.
+Disks: 2330478/41G read, 7328763/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.47 24  1   67     37M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 71564  1027 121     30      3297334+ 350     1632783+ 0       132906  0.0   597597     2268333   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 704 total, 3 running, 701 sleeping, 2563 threads 
+2025/11/22 13:14:17
+Load Avg: 6.62, 4.57, 4.27 
+CPU usage: 55.12% user, 2.78% sys, 42.9% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2204M shared.
+PhysMem: 48G used (4664M wired, 0B compressor), 16G unused.
+VM: 50T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24818720/17G in, 9797780/1889M out.
+Disks: 2330478/41G read, 7328769/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.47 24  1   67     37M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 71564  1027 121     30      3297396+ 350     1632824+ 0       132906  0.0   701786     2661456   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 704 total, 4 running, 700 sleeping, 2572 threads 
+2025/11/22 13:14:18
+Load Avg: 6.62, 4.57, 4.27 
+CPU usage: 57.85% user, 3.4% sys, 39.10% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2204M shared.
+PhysMem: 48G used (4663M wired, 0B compressor), 16G unused.
+VM: 50T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24818768/17G in, 9797825/1889M out.
+Disks: 2330478/41G read, 7328775/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.47 24  1   67     37M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 71564  1027 121     30      3297444+ 350     1632856+ 0       132906  0.0   552400     2118749   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 704 total, 3 running, 701 sleeping, 2576 threads 
+2025/11/22 13:14:19
+Load Avg: 7.37, 4.76, 4.34 
+CPU usage: 59.14% user, 2.28% sys, 38.56% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2204M shared.
+PhysMem: 48G used (4676M wired, 0B compressor), 16G unused.
+VM: 50T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24818827/17G in, 9797886/1889M out.
+Disks: 2330478/41G read, 7328778/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.47 24  1   67     37M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 71564  1027 121     30      3297491+ 350     1632888+ 0       132906  0.0   496704     1865236   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 704 total, 2 running, 702 sleeping, 2578 threads 
+2025/11/22 13:14:20
+Load Avg: 7.37, 4.76, 4.34 
+CPU usage: 16.11% user, 2.19% sys, 81.69% idle 
+SharedLibs: 1088M resident, 143M data, 233M linkedit.
+MemRegions: 0 total, 0B resident, 0B private, 2204M shared.
+PhysMem: 48G used (4713M wired, 0B compressor), 16G unused.
+VM: 50T vsize, 5225M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 24818917/17G in, 9797949/1889M out.
+Disks: 2330478/41G read, 7328800/107G written.
+
+PID    COMMAND %CPU TIME     #TH #WQ #PORTS MEM  PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD   SYSMACH CSW      PAGEINS IDLEW   POWER INSTRS     CYCLES    JETPRI USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+67351  ollama  0.0  01:14.47 24  1   67     37M  0B   0B    67351 65953 sleeping *0[1]  0.00000 0.00000    501 71564  1027 121     30      3297522+ 350     1632908+ 0       132906  0.0   417859     1318421   180    jv   N/A    N/A   N/A   N/A   N/A   N/A  

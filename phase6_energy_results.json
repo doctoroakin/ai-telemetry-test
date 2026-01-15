@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Control_Free",
+    "prompt": "Write a short story about a space explorer discovering a new planet. Write about 100 words....",
+    "output_preview": "As the spaceship, Celestia, emerged from the cosmos, Captain Jaxon's eyes widened with wonder. His c...",
+    "tokens": 126,
+    "time_s": 27.69,
+    "avg_power_w": 48.91,
+    "max_power_w": 55.26,
+    "sec_per_token": 0.2197,
+    "net_power_w": 44.49,
+    "joules": 1231.93,
+    "joules_per_token": 9.7772
+  },
+  {
+    "name": "Constraint_Format",
+    "prompt": "Write a short story about a space explorer. Use exactly three sentences. No more, no less....",
+    "output_preview": "As the stars streaked past her cockpit like diamonds on velvet, Captain Jaxon navigated her ship, th...",
+    "tokens": 97,
+    "time_s": 20.35,
+    "avg_power_w": 48.95,
+    "max_power_w": 54.58,
+    "sec_per_token": 0.2098,
+    "net_power_w": 44.53,
+    "joules": 906.19,
+    "joules_per_token": 9.3422
+  },
+  {
+    "name": "Constraint_Negative",
+    "prompt": "Write a short story about a space explorer without using the letter 'e' or the word 'planet'....",
+    "output_preview": "Sandstorm swept through Zorvath's suit as she trudged across dusty terrain. Her gloved hands grasped...",
+    "tokens": 160,
+    "time_s": 32.27,
+    "avg_power_w": 51.94,
+    "max_power_w": 56.89,
+    "sec_per_token": 0.2017,
+    "net_power_w": 47.52,
+    "joules": 1533.47,
+    "joules_per_token": 9.5842
+  },
+  {
+    "name": "Constraint_Impossible",
+    "prompt": "Write a palindrome that is exactly 50 words long and makes coherent sense about space exploration....",
+    "output_preview": "A man, a plan, a spacecraft, a canal: Panama! A star, so bright, in the dark of night, shines with a...",
+    "tokens": 132,
+    "time_s": 27.22,
+    "avg_power_w": 52.27,
+    "max_power_w": 58.01,
+    "sec_per_token": 0.2062,
+    "net_power_w": 47.85,
+    "joules": 1302.48,
+    "joules_per_token": 9.8673
+  }
+]

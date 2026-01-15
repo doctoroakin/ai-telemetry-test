@@ -1,0 +1,227 @@
+[
+  {
+    "level": 0,
+    "name": "Free",
+    "prompt": "Write about a cat....",
+    "tps": 5.17,
+    "tokens": 201,
+    "time_s": 38.84,
+    "early_termination": false
+  },
+  {
+    "level": 0,
+    "name": "Free",
+    "prompt": "Describe the ocean....",
+    "tps": 5.23,
+    "tokens": 201,
+    "time_s": 38.46,
+    "early_termination": false
+  },
+  {
+    "level": 0,
+    "name": "Free",
+    "prompt": "Explain gravity....",
+    "tps": 5.25,
+    "tokens": 201,
+    "time_s": 38.26,
+    "early_termination": false
+  },
+  {
+    "level": 0,
+    "name": "Free",
+    "prompt": "Tell me about computers....",
+    "tps": 5.16,
+    "tokens": 201,
+    "time_s": 38.93,
+    "early_termination": false
+  },
+  {
+    "level": 0,
+    "name": "Free",
+    "prompt": "Describe a sunset....",
+    "tps": 5.18,
+    "tokens": 201,
+    "time_s": 38.81,
+    "early_termination": false
+  },
+  {
+    "level": 1,
+    "name": "Format_Only",
+    "prompt": "Write about a cat in exactly three sentences....",
+    "tps": 4.9,
+    "tokens": 98,
+    "time_s": 20.01,
+    "early_termination": false
+  },
+  {
+    "level": 1,
+    "name": "Format_Only",
+    "prompt": "Describe the ocean in exactly 20 words....",
+    "tps": 4.11,
+    "tokens": 28,
+    "time_s": 6.82,
+    "early_termination": false
+  },
+  {
+    "level": 1,
+    "name": "Format_Only",
+    "prompt": "Explain gravity in one sentence....",
+    "tps": 4.43,
+    "tokens": 34,
+    "time_s": 7.68,
+    "early_termination": false
+  },
+  {
+    "level": 1,
+    "name": "Format_Only",
+    "prompt": "Tell me about computers in exactly 15 words....",
+    "tps": 3.73,
+    "tokens": 20,
+    "time_s": 5.36,
+    "early_termination": false
+  },
+  {
+    "level": 1,
+    "name": "Format_Only",
+    "prompt": "Describe a sunset using exactly two sentences....",
+    "tps": 4.72,
+    "tokens": 65,
+    "time_s": 13.78,
+    "early_termination": false
+  },
+  {
+    "level": 2,
+    "name": "Single_Negative",
+    "prompt": "Write about a cat without using the letter 'e'....",
+    "tps": 5.03,
+    "tokens": 178,
+    "time_s": 35.37,
+    "early_termination": false
+  },
+  {
+    "level": 2,
+    "name": "Single_Negative",
+    "prompt": "Describe the ocean without using 'water' or 'blue'...",
+    "tps": 5.05,
+    "tokens": 201,
+    "time_s": 39.83,
+    "early_termination": false
+  },
+  {
+    "level": 2,
+    "name": "Single_Negative",
+    "prompt": "Explain gravity without using 'force' or 'mass'....",
+    "tps": 5.05,
+    "tokens": 201,
+    "time_s": 39.79,
+    "early_termination": false
+  },
+  {
+    "level": 2,
+    "name": "Single_Negative",
+    "prompt": "Tell me about computers without using 'data' or 'p...",
+    "tps": 5.05,
+    "tokens": 201,
+    "time_s": 39.82,
+    "early_termination": false
+  },
+  {
+    "level": 2,
+    "name": "Single_Negative",
+    "prompt": "Describe a sunset without using 'sun' or 'sky'....",
+    "tps": 5.0,
+    "tokens": 173,
+    "time_s": 34.6,
+    "early_termination": false
+  },
+  {
+    "level": 3,
+    "name": "Multiple_Negative",
+    "prompt": "Write about a cat without using 'e', 'a', or any n...",
+    "tps": 4.86,
+    "tokens": 137,
+    "time_s": 28.2,
+    "early_termination": false
+  },
+  {
+    "level": 3,
+    "name": "Multiple_Negative",
+    "prompt": "Describe the ocean without 'water', 'blue', 'wave'...",
+    "tps": 4.92,
+    "tokens": 201,
+    "time_s": 40.83,
+    "early_termination": false
+  },
+  {
+    "level": 3,
+    "name": "Multiple_Negative",
+    "prompt": "Explain gravity without 'force', 'mass', 'pull', '...",
+    "tps": 4.92,
+    "tokens": 201,
+    "time_s": 40.86,
+    "early_termination": false
+  },
+  {
+    "level": 3,
+    "name": "Multiple_Negative",
+    "prompt": "Tell me about computers without 'data', 'processor...",
+    "tps": 4.92,
+    "tokens": 201,
+    "time_s": 40.84,
+    "early_termination": false
+  },
+  {
+    "level": 3,
+    "name": "Multiple_Negative",
+    "prompt": "Describe a sunset without 'sun', 'sky', 'orange', ...",
+    "tps": 4.93,
+    "tokens": 201,
+    "time_s": 40.8,
+    "early_termination": false
+  },
+  {
+    "level": 4,
+    "name": "Nearly_Impossible",
+    "prompt": "Write a palindrome about cats that makes sense....",
+    "tps": 4.92,
+    "tokens": 106,
+    "time_s": 21.55,
+    "early_termination": false
+  },
+  {
+    "level": 4,
+    "name": "Nearly_Impossible",
+    "prompt": "Describe the ocean where each word starts with the...",
+    "tps": 4.87,
+    "tokens": 149,
+    "time_s": 30.6,
+    "early_termination": false
+  },
+  {
+    "level": 4,
+    "name": "Nearly_Impossible",
+    "prompt": "Explain gravity using only words that rhyme with '...",
+    "tps": 4.82,
+    "tokens": 102,
+    "time_s": 21.14,
+    "early_termination": false
+  },
+  {
+    "level": 4,
+    "name": "Nearly_Impossible",
+    "prompt": "Tell me about computers using only 3-letter words....",
+    "tps": 4.52,
+    "tokens": 55,
+    "time_s": 12.17,
+    "early_termination": false
+  },
+  {
+    "level": 4,
+    "name": "Nearly_Impossible",
+    "prompt": "Describe a sunset where every word contains exactl...",
+    "tps": 4.55,
+    "tokens": 61,
+    "time_s": 13.4,
+    "early_termination": false
+  }
+]
